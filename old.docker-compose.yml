@@ -72,8 +72,6 @@ services:
 #      - docker-sync:/var/www/html # Docker-sync
     labels:
       - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
-    ports:
-      - "7000:80"
 
   mailhog:
     image: mailhog/mailhog

@@ -1,2 +1,5 @@
 .idea/
-.docker-sync/
+.docker-sync/web/themes/contrib
+web/profiles/contrib
+web/libraries
+vendor
