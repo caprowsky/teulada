@@ -1,0 +1,14 @@
+uuid: e50457af-02f3-4f10-a56a-2d54c3758e88
+langcode: it
+status: true
+dependencies:
+  config:
+    - user.role.operatore_ras
+  module:
+    - user
+id: user_add_role_action.operatore_ras
+label: 'Aggiungere il ruolo Operatore RAS agli utenti selezionati'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: operatore_ras

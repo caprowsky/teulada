@@ -1,0 +1,9 @@
+uuid: 2cfc5256-362f-494a-ba1c-747637fde730
+langcode: it
+status: true
+dependencies: {  }
+id: it
+label: Italiano
+direction: ltr
+weight: -10
+locked: false

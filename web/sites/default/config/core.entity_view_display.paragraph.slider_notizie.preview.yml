@@ -1,0 +1,22 @@
+uuid: 52bbe87c-c057-44aa-834a-3e576f6045a0
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.slider_notizie.field_collegamenti
+    - paragraphs.paragraphs_type.slider_notizie
+id: paragraph.slider_notizie.preview
+targetEntityType: paragraph
+bundle: slider_notizie
+mode: preview
+content:
+  field_collegamenti:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

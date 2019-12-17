@@ -1,0 +1,28 @@
+uuid: 05970450-b5c4-40db-a649-685a784d473c
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.bandi_massimo_finanziabile
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: bandimassimofinanziabile
+theme: bartik
+region: sidebar_first
+weight: -3
+provider: null
+plugin: 'facet_block:bandi_massimo_finanziabile'
+settings:
+  id: 'facet_block:bandi_massimo_finanziabile'
+  label: 'Bandi - Massimo finanziabile'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /bandi
+    negate: false
+    context_mapping: {  }

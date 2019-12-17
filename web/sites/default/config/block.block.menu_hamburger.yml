@@ -1,0 +1,27 @@
+uuid: cb8a7f86-535f-4fbb-9b17-11cd70e9aced
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - si8
+id: menu_hamburger
+theme: si8
+region: footer
+weight: -7
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Menu Hamburger'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand: 1
+  parent: 'main:'
+  suggestion: hamburger
+visibility: {  }

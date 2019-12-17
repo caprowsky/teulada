@@ -1,0 +1,22 @@
+uuid: 24535340-52ec-4066-a968-d91c0494fd8b
+langcode: it
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: bartik_powered
+theme: bartik
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Realizzato con Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

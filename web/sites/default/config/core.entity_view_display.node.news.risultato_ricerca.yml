@@ -1,0 +1,72 @@
+uuid: e89855a0-54c2-4d8b-8a54-d02790ba91a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.risultato_ricerca
+    - field.field.node.news.body
+    - field.field.node.news.field_allegati
+    - field.field.node.news.field_argomenti
+    - field.field.node.news.field_evento_data
+    - field.field.node.news.field_immagine
+    - field.field.node.news.field_metatag
+    - field.field.node.news.field_risorse_collegate
+    - field.field.node.news.field_tags
+    - node.type.news
+  module:
+    - datetime_range
+    - smart_trim
+    - user
+id: node.news.risultato_ricerca
+targetEntityType: node
+bundle: news
+mode: risultato_ricerca
+content:
+  body:
+    type: smart_trim
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: '40'
+      trim_type: words
+      trim_suffix: '  [...]'
+      more_link: '0'
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: text
+      more_class: more-link
+    third_party_settings: {  }
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_argomenti:
+    weight: 1
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_evento_data:
+    weight: 2
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: data_completa
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+hidden:
+  addtoany: true
+  field_allegati: true
+  field_immagine: true
+  field_metatag: true
+  field_risorse_collegate: true
+  field_tags: true
+  langcode: true
+  links: true

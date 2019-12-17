@@ -1,0 +1,21 @@
+uuid: 8a2d39ee-fdfa-4f0a-95cf-1414354d1621
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agevolazione_concessa
+    - node.type.bando
+  module:
+    - text
+id: node.bando.field_agevolazione_concessa
+field_name: field_agevolazione_concessa
+entity_type: node
+bundle: bando
+label: 'Agevolazione concessa'
+description: 'Inserisci la descrizione dell''agevolazione concessa'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

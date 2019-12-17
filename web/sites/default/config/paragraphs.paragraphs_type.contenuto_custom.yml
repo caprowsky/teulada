@@ -1,0 +1,7 @@
+uuid: 5f45254f-3b75-4c91-8c9d-8312ebf836dd
+langcode: it
+status: true
+dependencies: {  }
+id: contenuto_custom
+label: 'Contenuto custom'
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: e529cdc9-a30a-45e5-b088-63b2b029668f
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.video_in_evidenza.field_collegamenti
+    - paragraphs.paragraphs_type.video_in_evidenza
+id: paragraph.video_in_evidenza.preview
+targetEntityType: paragraph
+bundle: video_in_evidenza
+mode: preview
+content:
+  field_collegamenti:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

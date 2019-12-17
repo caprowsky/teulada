@@ -1,0 +1,16 @@
+uuid: 9c95f7fc-3ac1-492c-9d6c-1ca8f13a8adb
+langcode: it
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.agevolazioni_in_evidenza
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: paragraph.agevolazioni_in_evidenza
+target_entity_type_id: paragraph
+target_bundle: agevolazioni_in_evidenza
+default_langcode: site_default
+language_alterable: true

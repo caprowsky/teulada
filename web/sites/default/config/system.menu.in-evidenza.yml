@@ -1,0 +1,8 @@
+uuid: c46d4450-d399-4a87-8c1a-b28a57ea80d6
+langcode: it
+status: true
+dependencies: {  }
+id: in-evidenza
+label: 'In evidenza'
+description: ''
+locked: false

@@ -1,0 +1,19 @@
+uuid: f4a1a5ad-e2c1-4d2e-b7f2-b999e08cd9fb
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dotazione_finanziaria
+    - node.type.bando
+id: node.bando.field_dotazione_finanziaria
+field_name: field_dotazione_finanziaria
+entity_type: node
+bundle: bando
+label: 'Dotazione finanziaria'
+description: 'Descrivi la dotazione finanziaria dell''agevolazione'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

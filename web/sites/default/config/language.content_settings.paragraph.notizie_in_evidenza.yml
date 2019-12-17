@@ -1,0 +1,16 @@
+uuid: 0387b581-4210-41f9-ae22-963f88653cbb
+langcode: it
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.notizie_in_evidenza
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: paragraph.notizie_in_evidenza
+target_entity_type_id: paragraph
+target_bundle: notizie_in_evidenza
+default_langcode: site_default
+language_alterable: true

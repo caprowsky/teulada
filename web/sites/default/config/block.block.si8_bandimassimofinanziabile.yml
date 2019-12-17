@@ -1,0 +1,28 @@
+uuid: f833daeb-ebd4-4b18-ac20-4266040428c2
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.bandi_massimo_finanziabile
+  module:
+    - facets
+    - system
+  theme:
+    - si8
+id: si8_bandimassimofinanziabile
+theme: si8
+region: sidebar_second
+weight: -15
+provider: null
+plugin: 'facet_block:bandi_massimo_finanziabile'
+settings:
+  id: 'facet_block:bandi_massimo_finanziabile'
+  label: 'Massimo finanziabile'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /agevolazioni
+    negate: false
+    context_mapping: {  }

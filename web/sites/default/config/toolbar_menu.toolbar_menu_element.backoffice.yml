@@ -1,0 +1,9 @@
+uuid: 8fb1c761-8799-452c-b37a-0a49cdcd4213
+langcode: it
+status: true
+dependencies: {  }
+id: backoffice
+label: Backoffice
+weight: null
+menu: backoffice
+rewrite_label: false

@@ -1,0 +1,41 @@
+id: termini
+label: si8 termini migration
+migration_group: si8
+
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls: modules/custom/migrando/files/si8_termini.json
+  item_selector: items
+  fields:
+    -
+      name: tid
+      selector: tid
+    -
+      name: name
+      selector: name
+    -
+      name: uuid
+      selector: uuid
+
+  ids:
+    tid:
+      type: string
+
+process:
+  vid:
+    plugin: default_value
+    default_value: tags
+  uuid: uuid
+  name:
+    plugin: encode
+    source: name
+
+destination:
+  plugin: entity:taxonomy_term
+
+dependencies:
+  enforced:
+    module:
+      - migrando

@@ -1,0 +1,14 @@
+uuid: f70911f7-bd06-4b5d-967b-800ab8136c10
+langcode: it
+status: true
+dependencies:
+  config:
+    - user.role.operatore_ras
+  module:
+    - user
+id: user_remove_role_action.operatore_ras
+label: 'Rimuovere il ruolo Operatore RAS dagli utenti selezionati'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: operatore_ras

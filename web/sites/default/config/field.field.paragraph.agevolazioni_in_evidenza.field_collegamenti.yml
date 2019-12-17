@@ -1,0 +1,28 @@
+uuid: 1f61bd8c-c4ff-4f7d-8121-2ea1d77f8476
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_collegamenti
+    - node.type.bando
+    - paragraphs.paragraphs_type.agevolazioni_in_evidenza
+id: paragraph.agevolazioni_in_evidenza.field_collegamenti
+field_name: field_collegamenti
+entity_type: paragraph
+bundle: agevolazioni_in_evidenza
+label: Collegamenti
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      bando: bando
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

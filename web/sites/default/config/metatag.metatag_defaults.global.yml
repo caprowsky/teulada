@@ -1,0 +1,10 @@
+uuid: 31c69010-4b68-43f6-aef4-32882508cd67
+langcode: it
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: b-qxCu1VLGWjqvXKv4Nt7y2BUo5VSGpEIj8gb6C_PUY
+id: global
+label: Global
+tags:
+  title: '[current-page:title] | SardegnaImpresa'

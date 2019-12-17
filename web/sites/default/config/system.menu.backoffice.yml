@@ -1,0 +1,8 @@
+uuid: 3e8c5370-fb24-4439-9b5b-2882b3a6d8af
+langcode: it
+status: true
+dependencies: {  }
+id: backoffice
+label: Backoffice
+description: ''
+locked: false

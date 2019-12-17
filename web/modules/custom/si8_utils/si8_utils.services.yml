@@ -1,0 +1,15 @@
+services:
+  si8_utils_event_subscriber:
+    class: Drupal\si8_utils\EventSubscriber\ContenutiRedirect
+    tags:
+      - {name: event_subscriber}
+  si8_utils.utils:
+    class: Drupal\si8_utils\Utils
+  si8_utils.twig.drupal_view_argument:
+      class: Drupal\si8_utils\DrupalViewArgument
+      tags:
+        - { name: twig.extension }
+  si8_utils.breadcrumb:
+    class: Drupal\si8_utils\BreadcrumbBuilder
+    tags:
+      - { name: breadcrumb_builder, priority: 100 }

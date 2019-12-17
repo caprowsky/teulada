@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the si8_utils module.
+ */
+
+/**
+ * Truncate redirect_404 table
+ */
+function si8_utils_update_8001(&$sandbox) {
+  $database = \Drupal::database();
+  $database->truncate('redirect_404')->execute();
+}
+
+/**
+ * Truncate redirect_404 table
+ */
+function si8_utils_update_8002(&$sandbox) {
+  $database = \Drupal::database();
+  $database->truncate('redirect_404')->execute();
+}

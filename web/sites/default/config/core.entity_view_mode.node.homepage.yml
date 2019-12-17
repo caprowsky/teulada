@@ -1,0 +1,10 @@
+uuid: e51a44ce-daa3-4519-9fe8-5edae5b5a750
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.homepage
+label: Homepage
+targetEntityType: node
+cache: true

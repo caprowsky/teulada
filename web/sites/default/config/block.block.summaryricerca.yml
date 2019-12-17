@@ -1,0 +1,22 @@
+uuid: 59db9ef8-dd5c-4e31-8a50-ed6a20b90402
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.summary_ricerca
+  module:
+    - facets_summary
+  theme:
+    - si8
+id: summaryricerca
+theme: si8
+region: footer
+weight: -4
+provider: null
+plugin: 'facets_summary_block:summary_ricerca'
+settings:
+  id: 'facets_summary_block:summary_ricerca'
+  label: 'Summary ricerca'
+  provider: facets_summary
+  label_display: '0'
+visibility: {  }

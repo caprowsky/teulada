@@ -1,0 +1,39 @@
+uuid: f7ca7adf-45da-4b2f-aac1-4b3b51d190d6
+langcode: it
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.notizie
+    - field.field.paragraph.slider_notizie.field_collegamenti
+    - paragraphs.paragraphs_type.slider_notizie
+  module:
+    - content_moderation
+    - entity_browser
+id: paragraph.slider_notizie.default
+targetEntityType: paragraph
+bundle: slider_notizie
+mode: default
+content:
+  field_collegamenti:
+    weight: 0
+    settings:
+      entity_browser: notizie
+      field_widget_display: label
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_edit: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

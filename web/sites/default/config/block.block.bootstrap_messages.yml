@@ -1,0 +1,22 @@
+uuid: c481157a-6dcb-44ce-853c-e20dcaedb7da
+langcode: it
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: bootstrap_messages
+theme: bootstrap
+region: header
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Messaggi di stato'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,28 @@
+uuid: 21388350-6cd7-4d84-9cfe-bea6fd89f4c7
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.bandi_bandi_attivi
+  module:
+    - facets
+    - system
+  theme:
+    - si8
+id: si8_bandibandiattivi
+theme: si8
+region: footer
+weight: -18
+provider: null
+plugin: 'facet_block:bandi_bandi_attivi'
+settings:
+  id: 'facet_block:bandi_bandi_attivi'
+  label: Agevolazioni
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /agevolazioni
+    negate: false
+    context_mapping: {  }

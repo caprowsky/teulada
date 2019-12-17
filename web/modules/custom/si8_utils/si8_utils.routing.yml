@@ -1,0 +1,7 @@
+si8_utils.form:
+ path: '/admin/impresa/conf'
+ defaults:
+   _title: 'Sardegna Impresa - Configurazioni'
+   _form: '\Drupal\si8_utils\Form\Admin'
+ requirements:
+   _permission: 'si8_utils impresa_conf'

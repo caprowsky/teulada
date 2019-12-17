@@ -1,0 +1,71 @@
+uuid: 5cb43965-71b2-488d-9ca1-1f73f2b0071c
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_box
+    - node.type.homepage
+    - paragraphs.paragraphs_type.agevolazioni_in_evidenza
+    - paragraphs.paragraphs_type.box_contenuti_custom
+    - paragraphs.paragraphs_type.contenuto_custom_con_immagine
+    - paragraphs.paragraphs_type.link_sezione
+    - paragraphs.paragraphs_type.messaggio
+    - paragraphs.paragraphs_type.notizie_in_evidenza
+    - paragraphs.paragraphs_type.slider_notizie
+    - paragraphs.paragraphs_type.video_in_evidenza
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_box
+field_name: field_box
+entity_type: node
+bundle: homepage
+label: Box
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      box_contenuti_custom: box_contenuti_custom
+      agevolazioni_in_evidenza: agevolazioni_in_evidenza
+      link_sezione: link_sezione
+      video_in_evidenza: video_in_evidenza
+      contenuto_custom_con_immagine: contenuto_custom_con_immagine
+      messaggio: messaggio
+      notizie_in_evidenza: notizie_in_evidenza
+      slider_notizie: slider_notizie
+    target_bundles_drag_drop:
+      box_contenuti_custom:
+        enabled: true
+        weight: 6
+      box_primo_livello:
+        weight: 7
+        enabled: false
+      contenuto_custom:
+        weight: 8
+        enabled: false
+      agevolazioni_in_evidenza:
+        enabled: true
+        weight: 9
+      link_sezione:
+        enabled: true
+        weight: 9
+      video_in_evidenza:
+        enabled: true
+        weight: 10
+      contenuto_custom_con_immagine:
+        enabled: true
+        weight: 11
+      messaggio:
+        enabled: true
+        weight: 11
+      notizie_in_evidenza:
+        enabled: true
+        weight: 15
+      slider_notizie:
+        enabled: true
+        weight: 16
+field_type: entity_reference_revisions

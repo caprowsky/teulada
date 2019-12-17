@@ -1,0 +1,38 @@
+uuid: 53a50cad-ca56-4d1b-86a4-a7aba149ca0d
+langcode: it
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: basic_html
+label: 'Basic HTML'
+description: ''
+attributes: {  }
+matchers:
+  3de2623c-7041-4a92-bd26-ba3abd4a8b6d:
+    uuid: 3de2623c-7041-4a92-bd26-ba3abd4a8b6d
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: '[node:langcode] - [node:title] - [node:summary]'
+      bundles:
+        bando: bando
+        faq: faq
+        glossary: glossary
+        news: news
+        page: page
+      group_by_bundle: true
+      include_unpublished: false
+  0996b26b-9fce-45aa-8df1-c964f0f02c56:
+    uuid: 0996b26b-9fce-45aa-8df1-c964f0f02c56
+    id: 'entity:file'
+    weight: 0
+    settings:
+      result_description: '[file:mime] - [file:name]'
+      bundles: null
+      group_by_bundle: null
+      images:
+        show_dimensions: false
+        show_thumbnail: false
+        thumbnail_image_style: null

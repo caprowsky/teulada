@@ -1,0 +1,6 @@
+row_limit: 10000
+pages: "/sites/default/files/styles/full-content/public\r\n/\r\n/sites/default/files/styles/img_news_opened_280x195/public\r\n/\r\n/sites/default/files/styles/homepage_slideshow/public\r\n/\r\n/sites/default/files/styles/full-content/public?itok=W-1h6NAj\r\n/\r\n/cron.php?cron_key=4W6pBWKuVXskWo8OOwotIcBLb4dig72XB1e4dpaOxUI\r\n/\r\n/sites/default/files/styles/strilletto_pagina/public\r\n/\r\n/browserconfig.xml\r\n/\r\n/sites/all/themes/rasboot/fonts/HelveticaNeue/HelveticaNeue.woff\r\n/\r\n/sites/all/libraries/flexslider/fonts/flexslider-icon.ttf\r\n/\r\n/sites/all/libraries/flexslider/fonts/flexslider-icon.woff\r\n/\r\n/sites/all/themes/rasboot/fonts/HelveticaNeue/HelveticaNeue.ttf\r\n/\r\n/sites/default/files/styles/strilletto_pagina/public\r\n/\r\n/news/ http:\n"
+suppress_404: false
+_core:
+  default_config_hash: FgPCEDevf9dhNU_QB_fo-4AWxi0rrSZ2SGfd7bLNzLM
+langcode: it

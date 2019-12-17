@@ -1,0 +1,21 @@
+uuid: 2a254b47-1458-43e3-a8ce-20fc895e6716
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_testo
+    - paragraphs.paragraphs_type.contenuto_custom_con_immagine
+  module:
+    - text
+id: paragraph.contenuto_custom_con_immagine.field_testo
+field_name: field_testo
+entity_type: paragraph
+bundle: contenuto_custom_con_immagine
+label: Testo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

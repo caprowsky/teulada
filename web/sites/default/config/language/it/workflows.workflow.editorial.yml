@@ -1,0 +1,12 @@
+states:
+  draft:
+    label: Bozza
+  published:
+    label: Pubblicato
+transitions:
+  archive:
+    label: Archivio
+  archived_published:
+    label: Ripristina
+  publish:
+    label: Pubblica

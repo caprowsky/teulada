@@ -1,0 +1,16 @@
+uuid: deeb3678-3484-426b-aa2b-336c76ccbf29
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.glossary
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.glossary
+target_entity_type_id: node
+target_bundle: glossary
+default_langcode: site_default
+language_alterable: true

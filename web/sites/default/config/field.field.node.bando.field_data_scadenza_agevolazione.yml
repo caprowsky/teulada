@@ -1,0 +1,21 @@
+uuid: 2fbbb97e-8e8a-4c25-9c95-29cdfd8a62d8
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_scadenza_agevolazione
+    - node.type.bando
+  module:
+    - datetime
+id: node.bando.field_data_scadenza_agevolazione
+field_name: field_data_scadenza_agevolazione
+entity_type: node
+bundle: bando
+label: 'Data di scadenza dell''agevolazione'
+description: 'Inserisci la data di scadenza dell''agevolazione'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

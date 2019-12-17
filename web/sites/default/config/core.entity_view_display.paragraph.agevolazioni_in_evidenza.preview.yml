@@ -1,0 +1,22 @@
+uuid: aa9dfefc-1aa5-4156-8536-4f30d88aba35
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.agevolazioni_in_evidenza.field_collegamenti
+    - paragraphs.paragraphs_type.agevolazioni_in_evidenza
+id: paragraph.agevolazioni_in_evidenza.preview
+targetEntityType: paragraph
+bundle: agevolazioni_in_evidenza
+mode: preview
+content:
+  field_collegamenti:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

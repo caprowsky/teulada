@@ -1,0 +1,22 @@
+uuid: b2b72b75-c1ee-4215-b53c-69ec99e51ea1
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.summary_bandi_archivio
+  module:
+    - facets_summary
+  theme:
+    - si8
+id: summarybandiarchivio
+theme: si8
+region: footer
+weight: -3
+provider: null
+plugin: 'facets_summary_block:summary_bandi_archivio'
+settings:
+  id: 'facets_summary_block:summary_bandi_archivio'
+  label: 'Summary bandi archivio'
+  provider: facets_summary
+  label_display: '0'
+visibility: {  }

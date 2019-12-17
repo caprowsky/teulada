@@ -1,0 +1,44 @@
+uuid: aa50f6fd-2013-4e90-9b2e-0bf9dea8c93b
+langcode: it
+status: true
+dependencies:
+  config:
+    - image.style.elenco_news
+    - image.style.elenco_news_mobile
+  theme:
+    - bootstrap
+id: elenco_contenuti
+label: 'Elenco contenuti'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: elenco_news
+  -
+    breakpoint_id: bootstrap.screen-md-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: ''
+  -
+    breakpoint_id: bootstrap.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: elenco_news
+  -
+    breakpoint_id: bootstrap.screen-sm-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: elenco_news_mobile
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: elenco_news_mobile
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: elenco_news_mobile
+breakpoint_group: bootstrap
+fallback_image_style: elenco_news

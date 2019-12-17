@@ -1,0 +1,28 @@
+uuid: b556e5f2-84a6-4664-877c-c91a94338b00
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.bandi_tipologia_iniziativa_archivio
+  module:
+    - facets
+    - system
+  theme:
+    - si8
+id: banditipologiainiziativa_archivio
+theme: si8
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'facet_block:bandi_tipologia_iniziativa_archivio'
+settings:
+  id: 'facet_block:bandi_tipologia_iniziativa_archivio'
+  label: 'Tipologia iniziativa'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /agevolazioni/archivio
+    negate: false
+    context_mapping: {  }

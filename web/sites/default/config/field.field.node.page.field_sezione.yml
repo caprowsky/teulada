@@ -1,0 +1,28 @@
+uuid: e9f86436-cc46-45f4-9c43-0c1ac04d272b
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sezione
+    - node.type.page
+    - taxonomy.vocabulary.sezioni
+id: node.page.field_sezione
+field_name: field_sezione
+entity_type: node
+bundle: page
+label: Sezione
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sezioni: sezioni
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

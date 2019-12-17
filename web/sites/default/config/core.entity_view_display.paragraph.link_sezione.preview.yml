@@ -1,0 +1,24 @@
+uuid: 8e13ca74-a58a-494f-8816-47e6181048a1
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.link_sezione.field_link
+    - field.field.paragraph.link_sezione.field_titolo
+    - paragraphs.paragraphs_type.link_sezione
+id: paragraph.link_sezione.preview
+targetEntityType: paragraph
+bundle: link_sezione
+mode: preview
+content:
+  field_titolo:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_link: true

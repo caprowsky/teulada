@@ -1,0 +1,17 @@
+uuid: b12d75cb-eee4-4e45-a54d-9d1a783993f1
+langcode: it
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Faq
+type: faq
+description: 'Crea una nuova FAQ.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

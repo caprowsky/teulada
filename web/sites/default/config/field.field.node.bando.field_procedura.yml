@@ -1,0 +1,21 @@
+uuid: c25b49b0-4b11-46be-8306-bccda6e7a12c
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_procedura
+    - node.type.bando
+  module:
+    - text
+id: node.bando.field_procedura
+field_name: field_procedura
+entity_type: node
+bundle: bando
+label: Procedura
+description: 'Inserisci la descrizione della procedura di partecipazione al bando'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

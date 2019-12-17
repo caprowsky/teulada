@@ -1,0 +1,28 @@
+uuid: 9e51e020-0d99-4163-bc19-0850e8f48c18
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.bandi_tipologia_iniziativa
+  module:
+    - facets
+    - system
+  theme:
+    - si8
+id: si8_banditipologiainiziativa
+theme: si8
+region: sidebar_second
+weight: -17
+provider: null
+plugin: 'facet_block:bandi_tipologia_iniziativa'
+settings:
+  id: 'facet_block:bandi_tipologia_iniziativa'
+  label: 'Tipologia iniziativa'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /agevolazioni
+    negate: false
+    context_mapping: {  }

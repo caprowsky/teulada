@@ -1,0 +1,85 @@
+uuid: 3bcab9eb-373f-45fe-bad2-6f0cce9eb6d2
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.elenco
+    - field.field.node.bando.field_a_sportello
+    - field.field.node.bando.field_agevolazione_concessa
+    - field.field.node.bando.field_criteri_di_valutazione
+    - field.field.node.bando.field_data_scadenza_agevolazione
+    - field.field.node.bando.field_dotazione_finanziaria
+    - field.field.node.bando.field_macrosettore
+    - field.field.node.bando.field_mas
+    - field.field.node.bando.field_metatag
+    - field.field.node.bando.field_oggetto_bando
+    - field.field.node.bando.field_procedura
+    - field.field.node.bando.field_progetti_finanziabili
+    - field.field.node.bando.field_riferimenti
+    - field.field.node.bando.field_soggetti_ammissibili
+    - field.field.node.bando.field_spese_ammissibili
+    - field.field.node.bando.field_spese_ammissibili_list
+    - field.field.node.bando.field_termini
+    - field.field.node.bando.field_tipologia_iniziativa
+    - node.type.bando
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.bando.elenco
+targetEntityType: node
+bundle: bando
+mode: elenco
+content:
+  field_data_scadenza_agevolazione:
+    weight: 1
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: data_completa
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_macrosettore:
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_oggetto_bando:
+    type: text_default
+    weight: 2
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_termini:
+    weight: 4
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_a_sportello: true
+  field_agevolazione_concessa: true
+  field_criteri_di_valutazione: true
+  field_dotazione_finanziaria: true
+  field_mas: true
+  field_metatag: true
+  field_procedura: true
+  field_progetti_finanziabili: true
+  field_riferimenti: true
+  field_soggetti_ammissibili: true
+  field_spese_ammissibili: true
+  field_spese_ammissibili_list: true
+  field_tipologia_iniziativa: true
+  langcode: true

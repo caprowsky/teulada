@@ -1,0 +1,17 @@
+uuid: c9d7d8f7-2b39-446a-aa03-f146cc4e0a04
+langcode: it
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Homepage
+type: homepage
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

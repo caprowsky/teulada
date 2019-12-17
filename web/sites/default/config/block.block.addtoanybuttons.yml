@@ -1,0 +1,20 @@
+uuid: 6c990b7a-6a2f-4621-8cf1-ddea891bb011
+langcode: it
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - si8
+id: addtoanybuttons
+theme: si8
+region: footer
+weight: -15
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: Condividi
+  provider: addtoany
+  label_display: '0'
+visibility: {  }

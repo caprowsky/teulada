@@ -1,0 +1,28 @@
+uuid: 9f25e613-1d89-4637-a4dc-37fbbaa6b18c
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_argomenti
+    - node.type.news
+    - taxonomy.vocabulary.argomenti
+id: node.news.field_argomenti
+field_name: field_argomenti
+entity_type: node
+bundle: news
+label: Argomenti
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      argomenti: argomenti
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

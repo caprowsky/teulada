@@ -1,0 +1,8 @@
+uuid: 95dc69de-da56-42c1-baf2-d302ca7baadf
+langcode: und
+status: true
+dependencies: {  }
+id: short_date
+label: 'Short date'
+locked: false
+pattern: d/m/Y

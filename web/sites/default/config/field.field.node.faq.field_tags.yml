@@ -1,0 +1,28 @@
+uuid: b1ea8e59-c488-48c5-a4c9-c9a76874560d
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.faq
+    - taxonomy.vocabulary.tags
+id: node.faq.field_tags
+field_name: field_tags
+entity_type: node
+bundle: faq
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

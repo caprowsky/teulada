@@ -1,0 +1,10 @@
+uuid: d040bcad-0b4e-4d4b-bb16-47ff438d2c74
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.elenco
+label: Elenco
+targetEntityType: node
+cache: true

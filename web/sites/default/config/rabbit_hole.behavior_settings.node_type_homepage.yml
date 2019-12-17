@@ -1,0 +1,9 @@
+uuid: 368be471-2587-48ae-8571-cddef7000a8c
+langcode: it
+status: true
+dependencies: {  }
+id: node_type_homepage
+action: page_redirect
+allow_override: 1
+redirect: '[site:url]'
+redirect_code: 301

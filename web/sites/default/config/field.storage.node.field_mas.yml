@@ -1,0 +1,39 @@
+uuid: db08f1a8-8813-4df5-965c-81c3df38787d
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_mas
+field_name: field_mas
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 'sino a € 50.000'
+    -
+      value: 1
+      label: 'sino a € 100.000'
+    -
+      value: 2
+      label: 'sino a € 200.000'
+    -
+      value: 3
+      label: 'sino a € 400.000'
+    -
+      value: 4
+      label: 'sino a € 800.000'
+    -
+      value: 5
+      label: 'oltre € 800.000'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

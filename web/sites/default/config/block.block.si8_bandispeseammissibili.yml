@@ -1,0 +1,28 @@
+uuid: e6aca2be-89f5-48a7-8db3-d6080058a616
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.bandi_spese_ammissibili
+  module:
+    - facets
+    - system
+  theme:
+    - si8
+id: si8_bandispeseammissibili
+theme: si8
+region: sidebar_second
+weight: -16
+provider: null
+plugin: 'facet_block:bandi_spese_ammissibili'
+settings:
+  id: 'facet_block:bandi_spese_ammissibili'
+  label: 'Spese ammissibili'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /agevolazioni
+    negate: false
+    context_mapping: {  }

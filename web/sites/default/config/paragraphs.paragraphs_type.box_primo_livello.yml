@@ -1,0 +1,7 @@
+uuid: 4bedee48-a390-4a9f-b8cb-919e8dfde545
+langcode: it
+status: true
+dependencies: {  }
+id: box_primo_livello
+label: 'Box primo livello'
+behavior_plugins: {  }

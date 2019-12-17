@@ -1,0 +1,29 @@
+uuid: 35cd45af-37f4-4e08-b42c-cf031ce60bcb
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.risultato_ricerca
+    - field.field.node.video.body
+    - field.field.node.video.field_youtube_video
+    - node.type.video
+  module:
+    - text
+    - user
+id: node.video.risultato_ricerca
+targetEntityType: node
+bundle: video
+mode: risultato_ricerca
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_youtube_video: true
+  langcode: true
+  links: true

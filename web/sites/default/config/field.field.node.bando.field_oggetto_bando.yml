@@ -1,0 +1,21 @@
+uuid: 90ad9237-3d0d-4bad-be72-f66ca3cf1ab2
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oggetto_bando
+    - node.type.bando
+  module:
+    - text
+id: node.bando.field_oggetto_bando
+field_name: field_oggetto_bando
+entity_type: node
+bundle: bando
+label: 'Oggetto del bando'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

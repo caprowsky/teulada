@@ -1,0 +1,19 @@
+uuid: 187995dd-0f10-44a3-bb45-adc080d57e4a
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_criteri_di_valutazione
+field_name: field_criteri_di_valutazione
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+bandi.pdf:
+  path: '/agevolazioni/pdf/{node}'
+  defaults:
+    _controller: '\Drupal\bandi\Controller\PdfController::view'
+    _title_callback: '\Drupal\bandi\Controller\PdfController::title'
+  requirements:
+    _permission: 'access content'
+  options:
+      no_cache: 'TRUE'

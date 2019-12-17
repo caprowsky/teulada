@@ -1,0 +1,30 @@
+uuid: fff0e5b3-bebb-4a36-9a0f-49b8870a123d
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.box_primo_livello.field_link
+    - field.field.paragraph.box_primo_livello.field_testo
+    - paragraphs.paragraphs_type.box_primo_livello
+  module:
+    - link
+id: paragraph.box_primo_livello.preview
+targetEntityType: paragraph
+bundle: box_primo_livello
+mode: preview
+content:
+  field_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+hidden:
+  field_testo: true

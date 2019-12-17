@@ -1,0 +1,14 @@
+uuid: 4da5efc6-3266-465a-8af5-d918792a1718
+langcode: it
+status: true
+dependencies: {  }
+name: news_home
+label: 'News home'
+effects:
+  51653c9a-d65e-4d45-95b9-4613d7a738c0:
+    uuid: 51653c9a-d65e-4d45-95b9-4613d7a738c0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 500

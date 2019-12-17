@@ -1,0 +1,4 @@
+si8_utils impresa_conf:
+    title: 'Manage SardegnaImpresa Configuration'
+    description: 'The description'
+    restrict access: true

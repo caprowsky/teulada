@@ -1,0 +1,7 @@
+uuid: ef541528-2186-46a1-8c09-6e3155a0db93
+langcode: it
+status: true
+dependencies: {  }
+id: video_in_evidenza
+label: 'Video in evidenza'
+behavior_plugins: {  }

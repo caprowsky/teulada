@@ -1,0 +1,34 @@
+cdn_provider: ''
+_core:
+  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://localhost:9999/themes/si8/favicon.ico'
+  use_default: 1
+schemas:
+  bootstrap: 8000
+  si8: 8000
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: 'public://logo_ras_0.png'
+  url: ''
+  use_default: 1
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+table_responsive: '-1'
+table: ''
+breadcrumb_home: 1
+langcode: it

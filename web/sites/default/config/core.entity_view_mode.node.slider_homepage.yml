@@ -1,0 +1,10 @@
+uuid: 9bc8af83-31c6-47eb-b69e-c8eb20ba076a
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.slider_homepage
+label: 'Slider homepage'
+targetEntityType: node
+cache: true

@@ -1,0 +1,7 @@
+uuid: 646362cb-a153-4dde-a841-504b48ae5eb3
+langcode: it
+status: true
+dependencies: {  }
+id: slider_notizie
+label: 'Slider notizie'
+behavior_plugins: {  }

@@ -1,0 +1,16 @@
+uuid: e5b4601d-8282-4d22-bbbc-cb536b6798f9
+langcode: it
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.link_sezione
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: paragraph.link_sezione
+target_entity_type_id: paragraph
+target_bundle: link_sezione
+default_langcode: site_default
+language_alterable: true

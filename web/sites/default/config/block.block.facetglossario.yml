@@ -1,0 +1,28 @@
+uuid: c3eeac2e-ef8f-4045-bb3e-7e90d69989ae
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.facet_gossario
+  module:
+    - facets
+    - system
+  theme:
+    - si8
+id: facetglossario
+theme: si8
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'facet_block:facet_gossario'
+settings:
+  id: 'facet_block:facet_gossario'
+  label: 'Facet Glossario'
+  provider: facets
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /glossario
+    negate: false
+    context_mapping: {  }

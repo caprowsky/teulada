@@ -1,0 +1,22 @@
+uuid: 4226fb0b-50d7-494f-8456-023f26ae875e
+langcode: it
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - si8
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: si8_help
+theme: si8
+region: content
+weight: -11
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Aiuto
+  provider: help
+  label_display: '0'
+visibility: {  }

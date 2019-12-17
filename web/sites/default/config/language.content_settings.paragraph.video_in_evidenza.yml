@@ -1,0 +1,16 @@
+uuid: 89d5413f-615c-48a2-81ad-c713fa153e17
+langcode: it
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.video_in_evidenza
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: paragraph.video_in_evidenza
+target_entity_type_id: paragraph
+target_bundle: video_in_evidenza
+default_langcode: site_default
+language_alterable: true

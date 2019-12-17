@@ -1,0 +1,21 @@
+uuid: 0d26932d-b549-44b7-bf22-b101e3ead90e
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipologia_iniziativa
+    - node.type.bando
+  module:
+    - options
+id: node.bando.field_tipologia_iniziativa
+field_name: field_tipologia_iniziativa
+entity_type: node
+bundle: bando
+label: 'Tipologia iniziativa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

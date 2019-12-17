@@ -1,0 +1,16 @@
+uuid: 63836c6b-644c-4428-a16b-702fc7f87f73
+langcode: it
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.messaggio
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: paragraph.messaggio
+target_entity_type_id: paragraph
+target_bundle: messaggio
+default_langcode: site_default
+language_alterable: true

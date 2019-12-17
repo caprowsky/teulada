@@ -1,0 +1,36 @@
+uuid: b2d31c8a-ea8e-4a4f-a12e-80936db93c45
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contenuto_custom.field_body
+    - field.field.paragraph.contenuto_custom.field_link
+    - paragraphs.paragraphs_type.contenuto_custom
+  module:
+    - link
+    - text
+id: paragraph.contenuto_custom.default
+targetEntityType: paragraph
+bundle: contenuto_custom
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

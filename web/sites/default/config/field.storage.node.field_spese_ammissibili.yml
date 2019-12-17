@@ -1,0 +1,19 @@
+uuid: 840acae5-fe50-42b7-a841-696ce0d984ae
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_spese_ammissibili
+field_name: field_spese_ammissibili
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

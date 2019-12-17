@@ -1,0 +1,69 @@
+uuid: ff5efb1a-6ad3-4829-80a8-8cf130a23a11
+langcode: it
+status: true
+dependencies:
+  config:
+    - search_api.index.bandi
+    - views.view.glossario
+  module:
+    - search_api
+id: facet_gossario
+name: 'Facet Glossario'
+url_alias: letter
+weight: 0
+min_count: 1
+show_only_one_result: false
+field_identifier: glossaryaz_title_1
+facet_source_id: 'search_api:views_page__glossario__glossario'
+widget:
+  type: glossaryaz
+  config:
+    show_count: 0
+    enable_default_theme: 1
+query_operator: or
+use_hierarchy: false
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+hard_limit: 0
+exclude: false
+only_visible_when_facet_source_is_visible: true
+processor_configs:
+  glossaryaz_all_items_processor:
+    processor_id: glossaryaz_all_items_processor
+    weights:
+      build: 10
+    settings: {  }
+  glossaryaz_widget_order:
+    processor_id: glossaryaz_widget_order
+    weights:
+      sort: -10
+    settings:
+      sort:
+        glossaryaz_sort_all:
+          weight: '-1'
+        glossaryaz_sort_az:
+          weight: '1'
+        glossaryaz_sort_09:
+          weight: '2'
+        glossaryaz_sort_other:
+          weight: '3'
+      glossaryaz_sort_az:
+        weight: 1
+        name: 'Alpha (A-Z)'
+      glossaryaz_sort_09:
+        weight: 2
+        name: 'Numeric (0-9)'
+      glossaryaz_sort_other:
+        weight: 3
+        name: 'Other (#)'
+      glossaryaz_sort_all:
+        weight: -1
+        name: All
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: -10
+      build: -10
+    settings: {  }
+empty_behavior:
+  behavior: none

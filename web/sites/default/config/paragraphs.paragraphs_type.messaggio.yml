@@ -1,0 +1,7 @@
+uuid: eb765141-69b8-40b4-a612-fbe475fe3183
+langcode: it
+status: true
+dependencies: {  }
+id: messaggio
+label: Messaggio
+behavior_plugins: {  }

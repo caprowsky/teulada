@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function bandi_theme($existing, $type, $theme, $path) {
+  return array(
+    'bandipdf' => [
+      'variables' => [
+        'title' => NULL,
+        'content' => [],
+        'url' => NULL,
+      ],
+    ],
+  );
+}

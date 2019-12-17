@@ -1,0 +1,14 @@
+uuid: 166872d4-e543-46fd-bd3a-8a998ed55977
+langcode: it
+status: true
+dependencies: {  }
+name: elenco_news_mobile
+label: 'Elenco news mobile'
+effects:
+  0a01970e-18b0-456a-9acf-cd3f26f1c281:
+    uuid: 0a01970e-18b0-456a-9acf-cd3f26f1c281
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 900
+      height: 350

@@ -1,0 +1,21 @@
+uuid: 56a0c8fd-6ca3-461c-8775-e0edf5ae12bb
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_soggetti_ammissibili
+    - node.type.bando
+  module:
+    - text
+id: node.bando.field_soggetti_ammissibili
+field_name: field_soggetti_ammissibili
+entity_type: node
+bundle: bando
+label: 'Soggetti ammissibili'
+description: 'Inserisci i soggetti ammissibili al bando'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

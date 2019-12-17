@@ -1,0 +1,51 @@
+uuid: b50fc6ef-3267-48e8-88e7-e029c5a1bb44
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_box_secondo_livello
+    - paragraphs.paragraphs_type.box_contenuti_custom
+    - paragraphs.paragraphs_type.contenuto_custom
+  module:
+    - entity_reference_revisions
+id: paragraph.box_contenuti_custom.field_box_secondo_livello
+field_name: field_box_secondo_livello
+entity_type: paragraph
+bundle: box_contenuti_custom
+label: Box
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      contenuto_custom: contenuto_custom
+    target_bundles_drag_drop:
+      box_contenuti_custom:
+        weight: 8
+        enabled: false
+      contenuto_custom:
+        enabled: true
+        weight: 9
+      agevolazioni_in_evidenza:
+        weight: 9
+        enabled: false
+      box_primo_livello:
+        weight: 10
+        enabled: false
+      elenco_contenuti:
+        weight: 11
+        enabled: false
+      link_sezione:
+        weight: 12
+        enabled: false
+      messaggio_in_evidenza:
+        weight: 13
+        enabled: false
+      news_in_evidenza:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,27 @@
+uuid: a1c502af-040b-4aad-8dee-f25c02427457
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.footer2
+  module:
+    - menu_block
+  theme:
+    - si8
+id: footer2
+theme: si8
+region: footer
+weight: -12
+provider: null
+plugin: 'menu_block:footer2'
+settings:
+  id: 'menu_block:footer2'
+  label: Footer2
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'footer2:'
+  suggestion: footer2
+visibility: {  }

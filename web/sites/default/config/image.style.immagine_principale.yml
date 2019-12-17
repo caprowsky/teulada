@@ -1,0 +1,14 @@
+uuid: 26e1fe65-1a39-46cf-8a00-c28c9e5f39cf
+langcode: it
+status: true
+dependencies: {  }
+name: immagine_principale
+label: 'Immagine principale'
+effects:
+  7d758f58-437c-4810-bc92-7d002e6deb7d:
+    uuid: 7d758f58-437c-4810-bc92-7d002e6deb7d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 370

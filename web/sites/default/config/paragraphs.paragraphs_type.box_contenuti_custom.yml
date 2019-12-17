@@ -1,0 +1,7 @@
+uuid: 8623a870-2cb8-4cdb-acfc-536f5cf14dbc
+langcode: it
+status: true
+dependencies: {  }
+id: box_contenuti_custom
+label: 'Box contenuti custom'
+behavior_plugins: {  }

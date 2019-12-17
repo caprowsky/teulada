@@ -1,0 +1,37 @@
+uuid: 5c46f866-4b7b-4403-8da3-b47c67d19945
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.box_contenuti_custom.field_box_secondo_livello
+    - paragraphs.paragraphs_type.box_contenuti_custom
+  module:
+    - content_moderation
+    - paragraphs
+id: paragraph.box_contenuti_custom.default
+targetEntityType: paragraph
+bundle: box_contenuti_custom
+mode: default
+content:
+  field_box_secondo_livello:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: preview
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

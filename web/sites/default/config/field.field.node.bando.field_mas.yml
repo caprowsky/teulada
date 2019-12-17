@@ -1,0 +1,21 @@
+uuid: 73c500dd-692e-4721-95a9-901a25c14950
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mas
+    - node.type.bando
+  module:
+    - options
+id: node.bando.field_mas
+field_name: field_mas
+entity_type: node
+bundle: bando
+label: 'Massimo finanziabile'
+description: 'Indica l''importo massimo finanziabile'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

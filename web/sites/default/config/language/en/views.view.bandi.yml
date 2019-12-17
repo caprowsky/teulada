@@ -1,0 +1,27 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Order by'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: Search
+      title: 'Support for businesses'
+      header:
+        result:
+          content: 'You have <strong>@total</strong> supports for businesses'
+  bandi:
+    display_options:
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: 'Support for businesses, archive | SardegnaImpresa'
+  archivio:
+    display_options:
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: 'Support for businesses, archive | SardegnaImpresa'
+      title: 'Support for businesses, archive'

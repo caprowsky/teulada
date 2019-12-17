@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "nid": "1",
+      "title": "Titolo it 1",
+      "lang": "it"
+    },
+    {
+      "nid": "2",
+      "title": "Titolo it 2",
+      "lang": "it"
+    }
+  ]
+}

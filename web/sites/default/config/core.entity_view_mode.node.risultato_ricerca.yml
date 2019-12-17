@@ -1,0 +1,10 @@
+uuid: eba9967c-c0e7-4a96-a7c5-56dbca850959
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.risultato_ricerca
+label: 'Risultato ricerca'
+targetEntityType: node
+cache: true

@@ -1,0 +1,22 @@
+uuid: 14067662-a0a1-452e-b7e2-3877711f517c
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.summary_bandi
+  module:
+    - facets_summary
+  theme:
+    - si8
+id: summarybandi
+theme: si8
+region: footer
+weight: -5
+provider: null
+plugin: 'facets_summary_block:summary_bandi'
+settings:
+  id: 'facets_summary_block:summary_bandi'
+  label: 'Summary bandi'
+  provider: facets_summary
+  label_display: '0'
+visibility: {  }

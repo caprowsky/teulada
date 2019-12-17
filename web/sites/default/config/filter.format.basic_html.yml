@@ -1,0 +1,45 @@
+uuid: 51f899b3-381e-4eac-b189-9187e412d079
+langcode: it
+status: true
+dependencies:
+  module:
+    - editor
+_core:
+  default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
+name: 'Basic HTML'
+format: basic_html
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<0 href hreflang> <1> <2> <3> <4 cite> <5> <6 type> <7 start type> <8> <9> <10> <11> <12 id> <13 id> <14 id> <15 id> <16 id> <17> <18> <19> <strong> <em> <a href> <ul> <li> <ol> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table border cellspacing cellpadding> <caption> <tbody> <thead> <tfoot> <th> <td valign colspan rowspan> <tr> <p class> <br> <drupal-entity data-*> <iframe frameborder height scrolling src width>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 7
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 8
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 11
+    settings: {  }

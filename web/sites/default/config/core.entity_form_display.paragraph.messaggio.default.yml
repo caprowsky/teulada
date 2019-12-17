@@ -1,0 +1,33 @@
+uuid: 815fd6da-8cdb-40b0-8d47-ecc24f1b6744
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.messaggio.field_body
+    - paragraphs.paragraphs_type.messaggio
+  module:
+    - content_moderation
+    - text
+id: paragraph.messaggio.default
+targetEntityType: paragraph
+bundle: messaggio
+mode: default
+content:
+  field_body:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

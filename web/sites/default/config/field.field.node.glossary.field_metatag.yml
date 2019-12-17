@@ -1,0 +1,21 @@
+uuid: 1c3dbe46-b084-4b5a-a164-517aa21e0ac7
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag
+    - node.type.glossary
+  module:
+    - metatag
+id: node.glossary.field_metatag
+field_name: field_metatag
+entity_type: node
+bundle: glossary
+label: Metatag
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

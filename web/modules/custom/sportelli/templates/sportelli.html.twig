@@ -1,0 +1,19 @@
+{% set classes = [
+'lista-sportelli',
+] %}
+<div{{ attributes.addClass(classes) }}>
+
+  <div class="row">
+    <div class="col-md-8">
+      {{ drupal_view_argument('custom_content', 'machine_name', 'sportelli') }}
+      {{ output.form }}
+    </div>
+
+    <aside class="col-md-4">
+      {{ drupal_block('navigazioneprincipale') }}
+    </aside>
+  </div>
+
+</div>
+
+

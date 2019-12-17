@@ -1,0 +1,14 @@
+uuid: 7e73e98f-9169-45e8-9c56-0623a8e55fab
+langcode: it
+status: true
+dependencies: {  }
+name: elenco_news
+label: 'Elenco news (300x300)'
+effects:
+  d7a65beb-3b69-4c8c-9db8-1a50c94cbfde:
+    uuid: d7a65beb-3b69-4c8c-9db8-1a50c94cbfde
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300

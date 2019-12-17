@@ -1,0 +1,21 @@
+uuid: 342ade3f-a3b0-42cc-84d2-93a284effba0
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_termini
+    - node.type.bando
+  module:
+    - text
+id: node.bando.field_termini
+field_name: field_termini
+entity_type: node
+bundle: bando
+label: Termini
+description: 'Inserisci i termini di scadenza del bando'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

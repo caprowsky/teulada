@@ -1,0 +1,16 @@
+uuid: 97bd6d8d-5c73-4fe9-a0b0-28561bc73e3d
+langcode: it
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.argomenti
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.argomenti
+target_entity_type_id: taxonomy_term
+target_bundle: argomenti
+default_langcode: site_default
+language_alterable: true

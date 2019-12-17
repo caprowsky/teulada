@@ -1,0 +1,28 @@
+uuid: 69c60bf2-6a5b-4416-a563-b5d7f1553660
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.facet_ricerca_content_type
+  module:
+    - facets
+    - system
+  theme:
+    - si8
+id: facetricercacontenttype
+theme: si8
+region: sidebar_second
+weight: -14
+provider: null
+plugin: 'facet_block:facet_ricerca_content_type'
+settings:
+  id: 'facet_block:facet_ricerca_content_type'
+  label: 'Tipo di contenuto'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /ricerca
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: a728f85f-d613-4e32-a83d-0ee9fbb911f3
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.messaggio.field_body
+    - paragraphs.paragraphs_type.messaggio
+  module:
+    - text
+id: paragraph.messaggio.default
+targetEntityType: paragraph
+bundle: messaggio
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

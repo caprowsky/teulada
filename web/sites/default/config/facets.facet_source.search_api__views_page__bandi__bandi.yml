@@ -1,0 +1,9 @@
+uuid: 2bde0e37-9186-4adb-9f2f-bfea66f65577
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__bandi__bandi
+name: 'search_api:views_page__bandi__bandi'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

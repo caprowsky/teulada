@@ -1,0 +1,93 @@
+uuid: 0aff5f9a-0913-4f7e-88ef-1d444e58c524
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news.body
+    - field.field.node.news.field_allegati
+    - field.field.node.news.field_argomenti
+    - field.field.node.news.field_evento_data
+    - field.field.node.news.field_immagine
+    - field.field.node.news.field_metatag
+    - field.field.node.news.field_risorse_collegate
+    - field.field.node.news.field_tags
+    - image.style.immagine_principale
+    - node.type.news
+  module:
+    - datetime_range
+    - file
+    - image
+    - metatag
+    - text
+    - user
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_allegati:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_argomenti:
+    weight: 1
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_evento_data:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: data_completa
+      separator: al
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_immagine:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: immagine_principale
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_metatag:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_risorse_collegate:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  addtoany: true
+  field_tags: true
+  langcode: true
+  links: true

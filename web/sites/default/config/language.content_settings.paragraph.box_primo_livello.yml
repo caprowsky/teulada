@@ -1,0 +1,16 @@
+uuid: c600291e-6cd4-4126-be51-6f88a96e25dc
+langcode: it
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.box_primo_livello
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: paragraph.box_primo_livello
+target_entity_type_id: paragraph
+target_bundle: box_primo_livello
+default_langcode: site_default
+language_alterable: true

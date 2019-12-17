@@ -1,0 +1,27 @@
+uuid: 4e2fc30c-a98e-4766-90cd-06d4713c2953
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.footer3
+  module:
+    - menu_block
+  theme:
+    - si8
+id: footer3
+theme: si8
+region: footer
+weight: -11
+provider: null
+plugin: 'menu_block:footer3'
+settings:
+  id: 'menu_block:footer3'
+  label: Footer3
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'footer3:'
+  suggestion: footer3
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 8f137c6a-9e3c-4737-8fe6-b009186f9c0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_evento_data
+    - node.type.news
+  module:
+    - datetime_range
+id: node.news.field_evento_data
+field_name: field_evento_data
+entity_type: node
+bundle: news
+label: 'Data evento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

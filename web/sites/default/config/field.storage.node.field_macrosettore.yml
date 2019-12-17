@@ -1,0 +1,33 @@
+uuid: 164e2d39-64fd-4511-ace6-780e1a7cff86
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_macrosettore
+field_name: field_macrosettore
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: Agricoltura
+    -
+      value: 1
+      label: Industria
+    -
+      value: 2
+      label: Servizi
+    -
+      value: 3
+      label: Turismo
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

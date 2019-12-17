@@ -1,0 +1,14 @@
+uuid: b33a1e9c-7ec8-4e15-a59b-7996295aea80
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.capo_redattore
+  module:
+    - user
+id: user_add_role_action.capo_redattore
+label: 'Add the Capo redattore role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: capo_redattore

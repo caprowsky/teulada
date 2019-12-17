@@ -1,0 +1,22 @@
+uuid: fd927295-1f04-4271-9c14-ab689bb901c6
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.notizie_in_evidenza.field_collegamenti
+    - paragraphs.paragraphs_type.notizie_in_evidenza
+id: paragraph.notizie_in_evidenza.preview
+targetEntityType: paragraph
+bundle: notizie_in_evidenza
+mode: preview
+content:
+  field_collegamenti:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

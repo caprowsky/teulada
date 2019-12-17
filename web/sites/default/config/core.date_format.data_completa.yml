@@ -1,0 +1,8 @@
+uuid: c831ed48-95f2-403d-9909-22d361fbd20c
+langcode: it
+status: true
+dependencies: {  }
+id: data_completa
+label: 'Data completa'
+locked: false
+pattern: 'd/m/Y H:i'

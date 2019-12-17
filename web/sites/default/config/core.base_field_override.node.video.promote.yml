@@ -1,0 +1,22 @@
+uuid: eb7f308f-c750-4234-bf72-f85bb8a58b68
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.video
+id: node.video.promote
+field_name: promote
+entity_type: node
+bundle: video
+label: 'Promosso alla prima pagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Acceso
+  off_label: Spento
+field_type: boolean

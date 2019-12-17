@@ -1,0 +1,13 @@
+uuid: ef09e586-5623-496f-af80-27c3e6f9ac6c
+langcode: it
+status: true
+dependencies:
+  module:
+    - pathauto
+_core:
+  default_config_hash: '-SdRoSbsl_FULjbX8mgESZdeoEOjgi7rDhHNdLOJ8n8'
+id: pathauto_update_alias_node
+label: 'Aggiorna alias URL'
+type: node
+plugin: pathauto_update_alias
+configuration: {  }

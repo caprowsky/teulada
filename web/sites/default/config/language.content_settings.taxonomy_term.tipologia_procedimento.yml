@@ -1,0 +1,16 @@
+uuid: c81e7532-9ab8-4fa8-8954-a7230f019dd8
+langcode: it
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipologia_procedimento
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.tipologia_procedimento
+target_entity_type_id: taxonomy_term
+target_bundle: tipologia_procedimento
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,40 @@
+uuid: 4d1ad0a2-7385-423e-8a95-a8ad0a8b8397
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.risultato_ricerca
+    - field.field.node.faq.body
+    - field.field.node.faq.field_metatag
+    - field.field.node.faq.field_tags
+    - node.type.faq
+  module:
+    - smart_trim
+    - user
+id: node.faq.risultato_ricerca
+targetEntityType: node
+bundle: faq
+mode: risultato_ricerca
+content:
+  body:
+    type: smart_trim
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      trim_length: '40'
+      trim_type: words
+      trim_suffix: '  [...]'
+      more_link: '0'
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: text
+      more_class: more-link
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_metatag: true
+  field_tags: true
+  langcode: true
+  links: true

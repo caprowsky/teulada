@@ -1,0 +1,22 @@
+uuid: f54403d9-92b3-459a-9728-e4c18fc407c2
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: bandi
+label: Bandi
+type: 'canonical_entities:node'
+pattern: '/agevolazioni/[node:title]'
+selection_criteria:
+  b65e58c3-eb43-4eee-9522-1faa8fa0de8a:
+    id: node_type
+    bundles:
+      bando: bando
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b65e58c3-eb43-4eee-9522-1faa8fa0de8a
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,11 @@
+uuid: ce24e86b-5241-445b-a1b0-c8f4b1cde11b
+langcode: it
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.agevolazioni_in_evidenza
+id: entity_subqueue.agevolazioni_in_evidenza
+target_entity_type_id: entity_subqueue
+target_bundle: agevolazioni_in_evidenza
+default_langcode: site_default
+language_alterable: false

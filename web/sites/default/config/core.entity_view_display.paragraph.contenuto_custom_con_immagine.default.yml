@@ -1,0 +1,43 @@
+uuid: a83d0aa6-d7f0-4913-9169-88cb0af84059
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contenuto_custom_con_immagine.field_immagine
+    - field.field.paragraph.contenuto_custom_con_immagine.field_testo
+    - field.field.paragraph.contenuto_custom_con_immagine.field_titolo
+    - image.style.large
+    - paragraphs.paragraphs_type.contenuto_custom_con_immagine
+  module:
+    - image
+    - text
+id: paragraph.contenuto_custom_con_immagine.default
+targetEntityType: paragraph
+bundle: contenuto_custom_con_immagine
+mode: default
+content:
+  field_immagine:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_testo:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_titolo:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

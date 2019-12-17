@@ -1,0 +1,59 @@
+id: utenti
+label: si8 utenti migration
+migration_group: si8
+
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls: modules/custom/migrando/files/si8_utenti.json
+  item_selector: items
+  fields:
+    -
+      name: uid
+      selector: uid
+    -
+      name: name
+      selector: name
+    -
+      name: mail
+      selector: email
+    -
+      name: uuid
+      selector: uuid
+    -
+      name: status
+      selector: stato
+    -
+      name: created
+      selector: created
+    -
+      name: access
+      selector: access
+    -
+      name: login
+      selector: login
+  ids:
+    uid:
+      type: string
+
+process:
+#  uid: uid
+  name: name
+  mail: mail
+  uuid: uuid
+  status: status
+  created: created
+  access: access
+  login: login
+  roles:
+    plugin: default_value
+    default_value: redattore
+
+destination:
+  plugin: 'entity:user'
+dependencies:
+  enforced:
+    module:
+      - migrando
+

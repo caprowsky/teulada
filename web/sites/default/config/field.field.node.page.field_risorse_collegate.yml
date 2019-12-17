@@ -1,0 +1,33 @@
+uuid: 652fb923-ac0d-410b-83b7-f6454bdc0f5e
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_risorse_collegate
+    - node.type.faq
+    - node.type.glossary
+    - node.type.news
+    - node.type.page
+id: node.page.field_risorse_collegate
+field_name: field_risorse_collegate
+entity_type: node
+bundle: page
+label: 'Risorse collegate'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      faq: faq
+      glossary: glossary
+      news: news
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: news
+field_type: entity_reference

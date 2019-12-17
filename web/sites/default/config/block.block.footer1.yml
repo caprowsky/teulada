@@ -1,0 +1,27 @@
+uuid: d1110104-a280-4f9a-b990-e5b51c5e4c8d
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.footer1
+  module:
+    - menu_block
+  theme:
+    - si8
+id: footer1
+theme: si8
+region: footer
+weight: -13
+provider: null
+plugin: 'menu_block:footer1'
+settings:
+  id: 'menu_block:footer1'
+  label: Footer1
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'footer1:'
+  suggestion: footer1
+visibility: {  }

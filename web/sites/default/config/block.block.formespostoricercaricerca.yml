@@ -1,0 +1,23 @@
+uuid: d556dfa7-da76-4210-a258-74f3b8980224
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.ricerca
+  module:
+    - views
+  theme:
+    - si8
+id: formespostoricercaricerca
+theme: si8
+region: footer
+weight: -17
+provider: null
+plugin: 'views_exposed_filter_block:ricerca-ricerca'
+settings:
+  id: 'views_exposed_filter_block:ricerca-ricerca'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

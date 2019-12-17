@@ -1,0 +1,28 @@
+uuid: e9fd5cdb-4e8d-4b10-acd7-174897885fc0
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_collegamenti
+    - node.type.news
+    - paragraphs.paragraphs_type.notizie_in_evidenza
+id: paragraph.notizie_in_evidenza.field_collegamenti
+field_name: field_collegamenti
+entity_type: paragraph
+bundle: notizie_in_evidenza
+label: Collegamenti
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

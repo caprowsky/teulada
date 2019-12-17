@@ -1,0 +1,14 @@
+uuid: 6d7a0af8-7e0a-4f10-87ee-efacb919917c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.redattore
+  module:
+    - user
+id: user_add_role_action.redattore
+label: 'Add the redattore role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: redattore

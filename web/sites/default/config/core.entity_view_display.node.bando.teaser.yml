@@ -1,0 +1,21 @@
+uuid: 47b33648-f30a-4a81-841e-72b53567a34b
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bando.field_soggetti_ammissibili
+    - node.type.bando
+  module:
+    - user
+id: node.bando.teaser
+targetEntityType: node
+bundle: bando
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_soggetti_ammissibili: true
+  langcode: true

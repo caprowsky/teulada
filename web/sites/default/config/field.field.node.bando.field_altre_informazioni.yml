@@ -1,0 +1,21 @@
+uuid: 3771fd9e-5f48-4c8e-af45-9ec267de2c59
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_altre_informazioni
+    - node.type.bando
+  module:
+    - text
+id: node.bando.field_altre_informazioni
+field_name: field_altre_informazioni
+entity_type: node
+bundle: bando
+label: 'Altre informazioni'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

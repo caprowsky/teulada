@@ -1,0 +1,25 @@
+uuid: 460c83b2-32eb-4bf6-82fa-cb8c166354ac
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: agevolazioni_in_evidenza
+label: 'Agevolazioni in evidenza'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      bando: bando
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false

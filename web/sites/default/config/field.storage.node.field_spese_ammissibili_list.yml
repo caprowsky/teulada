@@ -1,0 +1,42 @@
+uuid: f6ae2119-31ac-4178-b98a-24258e1b8c32
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_spese_ammissibili_list
+field_name: field_spese_ammissibili_list
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 'Investimenti produttivi (IP)'
+    -
+      value: 1
+      label: 'Servizi (S)'
+    -
+      value: 2
+      label: 'Formazione (F)'
+    -
+      value: 3
+      label: 'Partecipazione a fiere (FM)'
+    -
+      value: 4
+      label: 'Costi materiali (CM)'
+    -
+      value: 5
+      label: 'Spese gestione (SG)'
+    -
+      value: 6
+      label: 'Capitale circolante (CC)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

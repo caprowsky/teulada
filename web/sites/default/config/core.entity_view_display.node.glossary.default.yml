@@ -1,0 +1,39 @@
+uuid: 5f85dcdd-421b-46a7-8722-1c9a74e0571a
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.glossary.body
+    - field.field.node.glossary.field_metatag
+    - node.type.glossary
+  module:
+    - metatag
+    - text
+    - user
+id: node.glossary.default
+targetEntityType: node
+bundle: glossary
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_metatag:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true

@@ -1,0 +1,28 @@
+uuid: 71b6ec34-716c-43f6-8c0c-8235762b0e65
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.faq_tags
+  module:
+    - facets
+    - system
+  theme:
+    - si8
+id: faqtags
+theme: si8
+region: footer
+weight: -14
+provider: null
+plugin: 'facet_block:faq_tags'
+settings:
+  id: 'facet_block:faq_tags'
+  label: 'FAQ Tags'
+  provider: facets
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /sportello-unico/domande-frequenti
+    negate: false
+    context_mapping: {  }

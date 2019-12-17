@@ -1,0 +1,306 @@
+uuid: 4ef0bab6-346b-4491-8814-a75b8a93620f
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agevolazione_concessa
+    - field.storage.node.field_criteri_di_valutazione
+    - field.storage.node.field_data_scadenza_agevolazione
+    - field.storage.node.field_dotazione_finanziaria
+    - field.storage.node.field_macrosettore
+    - field.storage.node.field_mas
+    - field.storage.node.field_procedura
+    - field.storage.node.field_progetti_finanziabili
+    - field.storage.node.field_riferimenti
+    - field.storage.node.field_soggetti_ammissibili
+    - field.storage.node.field_spese_ammissibili
+    - field.storage.node.field_spese_ammissibili_list
+    - field.storage.node.field_termini
+    - field.storage.node.field_tipologia_iniziativa
+    - field.storage.node.body
+    - field.storage.node.field_tags
+    - field.storage.node.field_argomenti
+    - field.storage.node.field_tipologia_procedimento
+    - field.storage.node.field_oggetto_bando
+    - field.storage.node.field_altre_informazioni
+    - search_api.server.solr
+  module:
+    - search_api
+    - bandi
+    - search_api_glossary
+    - node
+id: bandi
+name: 'Contenuti Solr'
+description: ''
+read_only: false
+field_settings:
+  bandiattivi:
+    label: 'Bandi attivi'
+    property_path: search_api_bandiattivi
+    type: string
+  glossaryaz_title_1:
+    label: 'Glossary AZ - Content » Title text'
+    property_path: glossaryaz_title_1
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+  status:
+    label: 'Stato di pubblicazione'
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+  title:
+    label: Titolo
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+  field_agevolazione_concessa:
+    label: 'Agevolazione concessa'
+    datasource_id: 'entity:node'
+    property_path: field_agevolazione_concessa
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_agevolazione_concessa
+  field_criteri_di_valutazione:
+    label: 'Criteri di valutazione'
+    datasource_id: 'entity:node'
+    property_path: field_criteri_di_valutazione
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_criteri_di_valutazione
+  field_data_scadenza_agevolazione:
+    label: 'Data di scadenza dell''agevolazione'
+    datasource_id: 'entity:node'
+    property_path: field_data_scadenza_agevolazione
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_data_scadenza_agevolazione
+  field_dotazione_finanziaria:
+    label: 'Dotazione finanziaria'
+    datasource_id: 'entity:node'
+    property_path: field_dotazione_finanziaria
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_dotazione_finanziaria
+  field_macrosettore:
+    label: Macrosettore
+    datasource_id: 'entity:node'
+    property_path: field_macrosettore
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_macrosettore
+  field_mas:
+    label: 'Massimo finanziabile'
+    datasource_id: 'entity:node'
+    property_path: field_mas
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_mas
+  field_procedura:
+    label: Procedura
+    datasource_id: 'entity:node'
+    property_path: field_procedura
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_procedura
+  field_progetti_finanziabili:
+    label: 'Progetti finanziabili'
+    datasource_id: 'entity:node'
+    property_path: field_progetti_finanziabili
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_progetti_finanziabili
+  field_riferimenti:
+    label: Riferimenti
+    datasource_id: 'entity:node'
+    property_path: field_riferimenti
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_riferimenti
+  field_soggetti_ammissibili:
+    label: 'Soggetti ammissibili'
+    datasource_id: 'entity:node'
+    property_path: field_soggetti_ammissibili
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_soggetti_ammissibili
+  field_spese_ammissibili:
+    label: 'Spese ammissibili'
+    datasource_id: 'entity:node'
+    property_path: field_spese_ammissibili
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_spese_ammissibili
+  field_spese_ammissibili_list:
+    label: 'Spese ammissibili'
+    datasource_id: 'entity:node'
+    property_path: field_spese_ammissibili_list
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_spese_ammissibili_list
+  field_termini:
+    label: Termini
+    datasource_id: 'entity:node'
+    property_path: field_termini
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_termini
+  field_tipologia_iniziativa:
+    label: 'Tipologia iniziativa'
+    datasource_id: 'entity:node'
+    property_path: field_tipologia_iniziativa
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tipologia_iniziativa
+  created:
+    label: 'Data inserimento'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+  changed:
+    label: 'Data modifica'
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+  langcode:
+    label: Language
+    datasource_id: 'entity:node'
+    property_path: langcode
+    type: string
+  body:
+    label: Risposta
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_tags:
+    label: Tags
+    datasource_id: 'entity:node'
+    property_path: field_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+  field_argomenti:
+    label: Argomenti
+    datasource_id: 'entity:node'
+    property_path: field_argomenti
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_argomenti
+  title_1:
+    label: 'Title text'
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+  field_tipologia_procedimento:
+    label: 'Tipologia procedimento'
+    datasource_id: 'entity:node'
+    property_path: field_tipologia_procedimento
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tipologia_procedimento
+  field_oggetto_bando:
+    label: 'Oggetto del bando'
+    datasource_id: 'entity:node'
+    property_path: field_oggetto_bando
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_oggetto_bando
+  field_altre_informazioni:
+    label: 'Altre informazioni'
+    datasource_id: 'entity:node'
+    property_path: field_altre_informazioni
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_altre_informazioni
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected:
+        - custom_content
+        - homepage
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  bandiattivi: {  }
+  add_url: {  }
+  rendered_item: {  }
+  aggregated_field: {  }
+  hierarchy:
+    fields:
+      field_tipologia_procedimento: taxonomy_term-parent
+    weights:
+      preprocess_index: -45
+  glossary:
+    glossarytable: 'a:1:{s:13:"glossarytable";a:25:{s:11:"bandiattivi";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:3:"nid";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:5:"title";a:2:{s:8:"grouping";a:3:{s:11:"grouping_az";s:11:"grouping_az";s:11:"grouping_09";s:11:"grouping_09";s:14:"grouping_other";s:14:"grouping_other";}s:8:"glossary";i:0;}s:27:"field_agevolazione_concessa";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:28:"field_criteri_di_valutazione";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:27:"field_dotazione_finanziaria";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:18:"field_macrosettore";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:9:"field_mas";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:15:"field_procedura";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:27:"field_progetti_finanziabili";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:17:"field_riferimenti";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:26:"field_soggetti_ammissibili";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:23:"field_spese_ammissibili";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:28:"field_spese_ammissibili_list";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:13:"field_termini";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:26:"field_tipologia_iniziativa";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:4:"type";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:8:"langcode";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:4:"body";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:10:"field_tags";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:15:"field_argomenti";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:7:"title_1";a:2:{s:8:"glossary";s:1:"1";s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}}s:28:"field_tipologia_procedimento";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:19:"field_oggetto_bando";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}s:24:"field_altre_informazioni";a:2:{s:8:"grouping";a:3:{s:14:"grouping_other";s:14:"grouping_other";s:11:"grouping_az";i:0;s:11:"grouping_09";i:0;}s:8:"glossary";i:0;}}}'
+    field_enabled: 0
+    grouping_defaults:
+      grouping_other: grouping_other
+      grouping_az: null
+      grouping_09: null
+    weights:
+      preprocess_index: -20
+  transliteration:
+    all_fields: true
+    fields:
+      - bandiattivi
+      - glossaryaz_title_1
+      - title
+      - field_agevolazione_concessa
+      - field_criteri_di_valutazione
+      - field_dotazione_finanziaria
+      - field_procedura
+      - field_progetti_finanziabili
+      - field_riferimenti
+      - field_soggetti_ammissibili
+      - field_spese_ammissibili
+      - field_termini
+      - type
+      - langcode
+      - body
+      - title_1
+      - field_oggetto_bando
+      - field_altre_informazioni
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+tracker_settings:
+  default: {  }
+options:
+  index_directly: true
+  cron_limit: 50
+server: solr

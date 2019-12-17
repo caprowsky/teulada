@@ -1,0 +1,16 @@
+uuid: 1741bcec-724d-4dd0-b56b-e859b02d4074
+langcode: it
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.slider_notizie
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: paragraph.slider_notizie
+target_entity_type_id: paragraph
+target_bundle: slider_notizie
+default_langcode: site_default
+language_alterable: true

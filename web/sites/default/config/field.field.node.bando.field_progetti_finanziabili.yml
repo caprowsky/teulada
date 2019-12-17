@@ -1,0 +1,21 @@
+uuid: 1211c538-ed7e-4745-b349-a00865573044
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_progetti_finanziabili
+    - node.type.bando
+  module:
+    - text
+id: node.bando.field_progetti_finanziabili
+field_name: field_progetti_finanziabili
+entity_type: node
+bundle: bando
+label: 'Progetti finanziabili'
+description: 'Inserisci i progetti finanziabili'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

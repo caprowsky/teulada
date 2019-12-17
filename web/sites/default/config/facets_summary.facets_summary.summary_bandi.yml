@@ -1,0 +1,38 @@
+uuid: bcde9000-1eb9-4d81-9451-955f8cc6f10a
+langcode: it
+status: true
+dependencies:
+  config:
+    - search_api.index.bandi
+    - views.view.bandi
+  module:
+    - search_api
+id: summary_bandi
+name: 'Summary bandi'
+facets:
+  bandi_macrosettore:
+    checked: true
+    label: 'Bandi - Macrosettore'
+    separator: ', '
+    weight: 0
+    show_count: false
+  bandi_massimo_finanziabile:
+    checked: true
+    label: 'Bandi - Massimo finanziabile'
+    separator: ', '
+    weight: 0
+    show_count: false
+  bandi_spese_ammissibili:
+    checked: true
+    label: 'Bandi - Spese ammissibili'
+    separator: ', '
+    weight: 0
+    show_count: false
+  bandi_tipologia_iniziativa:
+    checked: true
+    label: 'Bandi - Tipologia iniziativa'
+    separator: ', '
+    weight: 0
+    show_count: false
+facet_source_id: 'search_api:views_page__bandi__bandi'
+processor_configs: {  }

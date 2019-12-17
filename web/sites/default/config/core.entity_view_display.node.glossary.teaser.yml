@@ -1,0 +1,29 @@
+uuid: 8e2a5bff-64d3-4d2e-a056-c778e0d82562
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.glossary.body
+    - node.type.glossary
+  module:
+    - text
+    - user
+id: node.glossary.teaser
+targetEntityType: node
+bundle: glossary
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

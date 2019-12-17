@@ -1,0 +1,5 @@
+name: Si8 Utils
+description: Utility
+package: Sardegnaimpresa
+type: module
+core: 8.x

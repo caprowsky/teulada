@@ -1,0 +1,93 @@
+uuid: e0af59ae-3d64-479d-aa72-705ba67162ad
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_allegati
+    - field.field.node.page.field_box
+    - field.field.node.page.field_immagine
+    - field.field.node.page.field_metatag
+    - field.field.node.page.field_risorse_collegate
+    - field.field.node.page.field_sezione
+    - field.field.node.page.field_tags
+    - field.field.node.page.field_tipologia_procedimento
+    - image.style.immagine_principale
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - file
+    - image
+    - metatag
+    - text
+    - user
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  addtoany:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_allegati:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_box:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_immagine:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: immagine_principale
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_metatag:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_risorse_collegate:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tipologia_procedimento:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_sezione: true
+  field_tags: true
+  langcode: true
+  links: true

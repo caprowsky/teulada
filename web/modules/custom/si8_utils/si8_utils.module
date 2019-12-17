@@ -1,0 +1,78 @@
+<?php
+
+use Drupal\editor\Entity\Editor;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_form_alter().
+ */
+function si8_utils_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+  if ($form['#id'] == 'views-exposed-form-ricerca-ricerca') {
+    $form['key']['#placeholder'] = t('Search');
+    $form['actions']['submit']['#attributes']['class'][] = 'fa fa-search';
+    $form['actions']['submit']['#value'] = '';
+  }
+
+  if ($form['#id'] == 'views-exposed-form-glossario-glossario') {
+    $form['key']['#placeholder'] = t('Search');
+    $form['actions']['submit']['#attributes']['class'][] = 'fa fa-search';
+    $form['actions']['submit']['#value'] = '';
+  }
+
+  if ($form['#id'] == 'views-exposed-form-trova-procedimento-procedimenti') {
+    $form['key']['#placeholder'] = t('Search');
+    $form['actions']['submit']['#attributes']['class'][] = 'fa fa-search';
+    $form['actions']['submit']['#value'] = '';
+  }
+
+  if ($form['#id'] == 'views-exposed-form-bandi-bandi') {
+    $form['key']['#placeholder'] = t('Search');
+    $form['actions']['submit']['#attributes']['class'][] = 'fa fa-search';
+    $form['actions']['submit']['#value'] = '';
+  }
+
+  if ($form['#id'] == 'views-exposed-form-domande-frequenti-faq') {
+    $form['key']['#placeholder'] = t('Search');
+    $form['actions']['submit']['#attributes']['class'][] = 'fa fa-search';
+    $form['actions']['submit']['#value'] = '';
+  }
+
+}
+
+function si8_utils_ckeditor_css_alter(array &$css, Editor $editor) {
+  $css[] = drupal_get_path('module', 'si8_utils') . '/css/ckeditor.css';
+}
+
+
+/**
+ * Implements hook_preprocess_views_view().
+ */
+function si8_utils_preprocess_views_view(&$vars) {
+
+  if ($vars['view_array']['#name'] == 'tutti_i_contenuti' && $vars['view_array']['#display_id'] == 'page_1') {
+    unset($vars['feed_icons'][0]);
+    unset($vars['feed_icons'][1]);
+
+    $query = \Drupal::request()->query->all();
+
+    $items[] =  [
+      '#type' => 'link',
+      '#url' => Url::fromUri('internal:/admin/contenuti/report.csv', ['query' => $query]),
+      '#title' => t('Scarica report dei contenuti selezionati'),
+    ];
+
+    $items[] =  [
+      '#type' => 'link',
+      '#url' => Url::fromUri('internal:/admin/contenuti/report_completo.csv', ['query' => $query]),
+      '#title' => t('Scarica report completo dei contenuti selezionati'),
+    ];
+
+    $vars['feed_icons'][] = [
+      '#theme' => 'item_list',
+      '#list_type' => 'ul',
+      '#items' => $items,
+    ];
+  }
+
+}

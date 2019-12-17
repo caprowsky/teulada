@@ -1,0 +1,45 @@
+uuid: b5fdedf9-9593-4ada-bbe8-27faf2d516fb
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_immagine
+    - paragraphs.paragraphs_type.contenuto_custom_con_immagine
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: paragraph.contenuto_custom_con_immagine.field_immagine
+field_name: field_immagine
+entity_type: paragraph
+bundle: contenuto_custom_con_immagine
+label: Immagine
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'upload/[date:custom:Y]/[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

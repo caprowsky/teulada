@@ -1,0 +1,21 @@
+uuid: 7675f119-fd6e-48b6-b8ad-972b8a6d291e
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spese_ammissibili_list
+    - node.type.bando
+  module:
+    - options
+id: node.bando.field_spese_ammissibili_list
+field_name: field_spese_ammissibili_list
+entity_type: node
+bundle: bando
+label: 'Spese ammissibili'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

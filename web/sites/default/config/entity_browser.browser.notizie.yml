@@ -1,0 +1,31 @@
+uuid: 55369213-05ec-4654-a22f-4be8f12dc8a6
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.entity_browser_contenuti
+  module:
+    - views
+name: notizie
+label: Notizie
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Seleziona contenuti'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  d95352d0-bb97-491b-9fd0-1cbac8269b4e:
+    settings:
+      view: entity_browser_contenuti
+      view_display: notizie
+      submit_text: 'Inserisci selezionati'
+      auto_select: false
+    uuid: d95352d0-bb97-491b-9fd0-1cbac8269b4e
+    weight: 1
+    label: view
+    id: view

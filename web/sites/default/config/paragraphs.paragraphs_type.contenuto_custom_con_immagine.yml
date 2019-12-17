@@ -1,0 +1,7 @@
+uuid: 601218ed-75fe-478b-8bcc-1bcfdd1800b5
+langcode: it
+status: true
+dependencies: {  }
+id: contenuto_custom_con_immagine
+label: 'Contenuto custom con immagine'
+behavior_plugins: {  }

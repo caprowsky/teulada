@@ -1,0 +1,37 @@
+uuid: 076f81d5-cf99-4569-aeb7-937bf6c3dd63
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.risultato_ricerca
+    - field.field.node.glossary.body
+    - node.type.glossary
+  module:
+    - smart_trim
+    - user
+id: node.glossary.risultato_ricerca
+targetEntityType: node
+bundle: glossary
+mode: risultato_ricerca
+content:
+  body:
+    type: smart_trim
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: '40'
+      trim_type: words
+      trim_suffix: '  [...]'
+      more_link: '0'
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: text
+      more_class: more-link
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_metatag: true
+  langcode: true
+  links: true

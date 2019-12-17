@@ -1,0 +1,62 @@
+uuid: 6d529734-42b8-4ed7-98c3-2191def99d59
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.elenco
+    - field.field.node.page.body
+    - field.field.node.page.field_allegati
+    - field.field.node.page.field_box
+    - field.field.node.page.field_immagine
+    - field.field.node.page.field_metatag
+    - field.field.node.page.field_risorse_collegate
+    - field.field.node.page.field_sezione
+    - field.field.node.page.field_tags
+    - field.field.node.page.field_tipologia_procedimento
+    - node.type.page
+    - responsive_image.styles.elenco_contenuti
+  module:
+    - responsive_image
+    - smart_trim
+    - user
+id: node.page.elenco
+targetEntityType: node
+bundle: page
+mode: elenco
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 1
+    settings:
+      trim_length: '50'
+      trim_type: words
+      trim_suffix: '  [...]'
+      more_link: '0'
+      more_text: More
+      summary_handler: trim
+      trim_options:
+        text: text
+      more_class: more-link
+    third_party_settings: {  }
+    region: content
+  field_immagine:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: elenco_contenuti
+      image_link: content
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  addtoany: true
+  field_allegati: true
+  field_box: true
+  field_metatag: true
+  field_risorse_collegate: true
+  field_sezione: true
+  field_tags: true
+  field_tipologia_procedimento: true
+  langcode: true
+  links: true

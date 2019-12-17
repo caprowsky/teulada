@@ -1,0 +1,48 @@
+uuid: 1c823478-0f3e-4bca-adcf-cdfaffcdc460
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.box_primo_livello.field_link
+    - field.field.paragraph.box_primo_livello.field_testo
+    - paragraphs.paragraphs_type.box_primo_livello
+  module:
+    - content_moderation
+    - link
+    - text
+id: paragraph.box_primo_livello.default
+targetEntityType: paragraph
+bundle: box_primo_livello
+mode: default
+content:
+  field_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_testo:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

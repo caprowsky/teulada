@@ -1,0 +1,7 @@
+uuid: 304f3736-ad7d-47ac-98e4-57c5c16ff005
+langcode: it
+status: true
+dependencies: {  }
+id: link_sezione
+label: 'Link sezione'
+behavior_plugins: {  }

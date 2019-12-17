@@ -1,0 +1,59 @@
+uuid: 6da00a2b-2ad1-4fcd-bdac-b179cbe08145
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_box
+    - node.type.page
+    - paragraphs.paragraphs_type.box_primo_livello
+    - paragraphs.paragraphs_type.contenuto_custom
+  module:
+    - entity_reference_revisions
+id: node.page.field_box
+field_name: field_box
+entity_type: node
+bundle: page
+label: Box
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      box_primo_livello: box_primo_livello
+      contenuto_custom: contenuto_custom
+    target_bundles_drag_drop:
+      box_primo_livello:
+        enabled: true
+        weight: 2
+      agevolazioni_in_evidenza:
+        weight: 9
+        enabled: false
+      box_contenuti_custom:
+        weight: 10
+        enabled: false
+      contenuto_custom:
+        enabled: true
+        weight: 12
+      link_sezione:
+        weight: 13
+        enabled: false
+      contenuto_custom_con_immagine:
+        weight: 15
+        enabled: false
+      notizie_in_evidenza:
+        weight: 15
+        enabled: false
+      slider_notizie:
+        weight: 16
+        enabled: false
+      messaggio:
+        weight: 17
+        enabled: false
+      video_in_evidenza:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,19 @@
+uuid: 191b0767-68e7-4143-8e94-be4a79834490
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_risorse_collegate
+field_name: field_risorse_collegate
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

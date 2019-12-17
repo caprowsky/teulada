@@ -1,0 +1,23 @@
+uuid: f88f5aaf-29b8-433a-b1e1-d74e8d5166fa
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_a_sportello
+    - node.type.bando
+id: node.bando.field_a_sportello
+field_name: field_a_sportello
+entity_type: node
+bundle: bando
+label: 'A sportello'
+description: 'Se flaggato indica che il bando è a sportello '
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Acceso
+  off_label: Spento
+field_type: boolean

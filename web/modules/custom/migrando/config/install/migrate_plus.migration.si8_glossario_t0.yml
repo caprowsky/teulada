@@ -1,0 +1,102 @@
+id: glossario_t0
+label: si8 glossario_t0 migration
+migration_group: si8
+
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:  modules/custom/migrando/files/si8_glossario.json
+  item_selector: items
+  fields:
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: uuid
+      selector: uuid
+    -
+      name: uid
+      selector: uid
+    -
+      name: created
+      selector: created
+    -
+      name: changed
+      selector: changed
+    -
+      name: status
+      selector: pubblicato
+    -
+      name: language
+      selector: lingua
+    -
+      name: tags
+      selector: tags
+    -
+      name: body
+      selector: body
+    -
+      name: percorso
+      selector: percorso
+    -
+
+  ids:
+    nid:
+      type: string
+
+process:
+  uuid: uuid
+  created: created
+  status: status
+
+  uid:
+    plugin: migration
+    migration: utenti
+    no_stub: true
+    source: uid
+
+  langcode:
+    plugin: static_map
+    source: language
+    map:
+      ES: es
+      EN: en
+      IT: it
+      und: it
+    default_value: it
+
+  type:
+    plugin: default_value
+    default_value: glossary
+
+  title:
+    plugin: encode
+    source: title
+
+  'body/value': body/value
+  'body/format':
+    plugin: default_value
+    default_value: basic_html
+
+  field_tags:
+    plugin: iterator
+    source: tags
+    process:
+      target_id:
+        plugin: migration
+        migration: termini
+        no_stub: true
+        source: tid
+
+destination:
+  plugin: entity:node
+
+dependencies:
+  enforced:
+    module:
+      - migrando
+

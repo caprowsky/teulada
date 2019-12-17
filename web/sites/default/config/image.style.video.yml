@@ -1,0 +1,14 @@
+uuid: ccc238ae-59fc-419f-bffc-b26731a38b62
+langcode: it
+status: true
+dependencies: {  }
+name: video
+label: Video
+effects:
+  87124318-01b4-49ae-bee1-bdf81b1d074e:
+    uuid: 87124318-01b4-49ae-bee1-bdf81b1d074e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 400

@@ -1,0 +1,21 @@
+uuid: 3eda1204-4730-4a0c-b273-ffd628dcceae
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_criteri_di_valutazione
+    - node.type.bando
+  module:
+    - text
+id: node.bando.field_criteri_di_valutazione
+field_name: field_criteri_di_valutazione
+entity_type: node
+bundle: bando
+label: 'Criteri di valutazione'
+description: 'Inserisci la descrizione dei criteri di valutazione'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

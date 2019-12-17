@@ -1,0 +1,14 @@
+uuid: db5c8432-76f7-4764-b0fc-02ebbd266b25
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.capo_redattore
+  module:
+    - user
+id: user_remove_role_action.capo_redattore
+label: 'Remove the Capo redattore role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: capo_redattore

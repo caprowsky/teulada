@@ -1,0 +1,7 @@
+uuid: ccd099dd-7dae-42ea-8e87-80fe712914ef
+langcode: it
+status: true
+dependencies: {  }
+id: notizie_in_evidenza
+label: 'Notizie in evidenza'
+behavior_plugins: {  }

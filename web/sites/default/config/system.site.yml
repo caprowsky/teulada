@@ -1,0 +1,15 @@
+uuid: eaa10409-e862-41c6-9cba-52bf28d02d9b
+name: SardegnaImpresa
+mail: alessandrocapra@gmail.com
+slogan: 'Sistema Imprenditoriale della Sardegna'
+page:
+  403: ''
+  404: /node/4419
+  front: /node/4408
+admin_compact_mode: false
+weight_select_max: 100
+langcode: it
+default_langcode: it
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+mail_notification: ''

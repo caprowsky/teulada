@@ -1,0 +1,28 @@
+uuid: dff12ed2-95ab-47a1-bdd0-91d54fca84c5
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.bandi_bandi_attivi
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: bandibandiattivi
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'facet_block:bandi_bandi_attivi'
+settings:
+  id: 'facet_block:bandi_bandi_attivi'
+  label: 'Bandi - Bandi attivi'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /bandi
+    negate: false
+    context_mapping: {  }

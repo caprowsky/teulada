@@ -1,0 +1,5 @@
+name: sportelli
+description: Sportelli Suap
+package: Sardegnaimpresa
+type: module
+core: 8.x

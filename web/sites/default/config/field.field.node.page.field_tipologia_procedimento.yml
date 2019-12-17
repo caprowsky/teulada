@@ -1,0 +1,28 @@
+uuid: 710cb7d8-2e17-445d-aa08-9a52504a46db
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipologia_procedimento
+    - node.type.page
+    - taxonomy.vocabulary.tipologia_procedimento
+id: node.page.field_tipologia_procedimento
+field_name: field_tipologia_procedimento
+entity_type: node
+bundle: page
+label: 'Tipologia procedimento'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipologia_procedimento: tipologia_procedimento
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

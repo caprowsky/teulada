@@ -1,0 +1,22 @@
+uuid: ac2cf1da-0f75-44bb-b4a5-31d53a10f21a
+langcode: it
+status: true
+dependencies:
+  theme:
+    - si8
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: si8_local_tasks
+theme: si8
+region: content
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Schede
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

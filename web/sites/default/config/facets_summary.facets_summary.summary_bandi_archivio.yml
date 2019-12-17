@@ -1,0 +1,38 @@
+uuid: 4f54c8d0-7d6c-4f27-9a98-2b4a891d46f9
+langcode: it
+status: true
+dependencies:
+  config:
+    - search_api.index.bandi
+    - views.view.bandi
+  module:
+    - search_api
+id: summary_bandi_archivio
+name: 'Summary bandi archivio'
+facets:
+  bandi_macrosettore_archivio:
+    checked: true
+    label: 'Bandi - Macrosettore'
+    separator: ', '
+    weight: -10
+    show_count: false
+  bandi_tipologia_iniziativa_archivio:
+    checked: true
+    label: 'Bandi - Tipologia iniziativa'
+    separator: ', '
+    weight: -9
+    show_count: false
+  bandi_spese_ammissibili_archivio:
+    checked: true
+    label: 'Bandi - Spese ammissibili'
+    separator: ', '
+    weight: -8
+    show_count: false
+  bandi_massimo_finanziabile_archivio:
+    checked: true
+    label: 'Bandi - Massimo finanziabile'
+    separator: ', '
+    weight: -7
+    show_count: false
+facet_source_id: 'search_api:views_page__bandi__archivio'
+processor_configs: {  }

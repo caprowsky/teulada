@@ -1,0 +1,22 @@
+uuid: b25c2328-f196-4d4a-94e3-60c2b035645f
+langcode: it
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - si8
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: si8_breadcrumbs
+theme: si8
+region: header
+weight: -11
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumb
+  provider: system
+  label_display: '0'
+visibility: {  }

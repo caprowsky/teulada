@@ -1,0 +1,27 @@
+uuid: 252e18b5-a8c7-4f8e-bd35-72d94c37f924
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - menu_block
+  theme:
+    - si8
+id: piedipagina
+theme: si8
+region: footer
+weight: -16
+provider: null
+plugin: 'menu_block:footer'
+settings:
+  id: 'menu_block:footer'
+  label: 'Piè di pagina'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'footer:'
+  suggestion: footer
+visibility: {  }

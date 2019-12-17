@@ -1,0 +1,24 @@
+uuid: c29d2560-ebcb-4793-959d-c88cfbd9f3cc
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.box_contenuti_custom.field_box_secondo_livello
+    - paragraphs.paragraphs_type.box_contenuti_custom
+  module:
+    - entity_reference_revisions
+id: paragraph.box_contenuti_custom.default
+targetEntityType: paragraph
+bundle: box_contenuti_custom
+mode: default
+content:
+  field_box_secondo_livello:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

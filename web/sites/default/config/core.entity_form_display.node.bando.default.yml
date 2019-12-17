@@ -1,0 +1,210 @@
+uuid: 2dbf6944-24a8-4d6b-8a13-bae9b6bdabda
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.bando.field_a_sportello
+    - field.field.node.bando.field_agevolazione_concessa
+    - field.field.node.bando.field_altre_informazioni
+    - field.field.node.bando.field_criteri_di_valutazione
+    - field.field.node.bando.field_data_scadenza_agevolazione
+    - field.field.node.bando.field_dotazione_finanziaria
+    - field.field.node.bando.field_macrosettore
+    - field.field.node.bando.field_mas
+    - field.field.node.bando.field_metatag
+    - field.field.node.bando.field_oggetto_bando
+    - field.field.node.bando.field_procedura
+    - field.field.node.bando.field_progetti_finanziabili
+    - field.field.node.bando.field_riferimenti
+    - field.field.node.bando.field_soggetti_ammissibili
+    - field.field.node.bando.field_spese_ammissibili
+    - field.field.node.bando.field_spese_ammissibili_list
+    - field.field.node.bando.field_termini
+    - field.field.node.bando.field_tipologia_iniziativa
+    - node.type.bando
+  module:
+    - content_moderation
+    - datetime
+    - link
+    - metatag
+    - path
+    - text
+id: node.bando.default
+targetEntityType: node
+bundle: bando
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_a_sportello:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_agevolazione_concessa:
+    weight: 15
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_altre_informazioni:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_criteri_di_valutazione:
+    weight: 20
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_data_scadenza_agevolazione:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_dotazione_finanziaria:
+    weight: 21
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_macrosettore:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_mas:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_metatag:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_oggetto_bando:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_procedura:
+    weight: 19
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_progetti_finanziabili:
+    weight: 14
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_riferimenti:
+    weight: 22
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_soggetti_ammissibili:
+    weight: 12
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_spese_ammissibili:
+    weight: 18
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_spese_ammissibili_list:
+    weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_termini:
+    weight: 16
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_tipologia_iniziativa:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

@@ -1,0 +1,15 @@
+connection:
+  control_terminal: 'sip-varnish3-01-be.sip.sardegnait.csr:6082 sip-varnish3-02-be.sip.sardegnait.csr:6082'
+  control_key: SegreTissimo
+  socket_timeout: '100'
+general:
+  enabled: 1
+  esi: 1
+  logging: 0
+  debug: 0
+  grace: '10'
+  page_cache_maximum_age: '86400'
+  esi_cache_maximum_age: '86400'
+available:
+  exclude: ''
+  authenticated_users: 0

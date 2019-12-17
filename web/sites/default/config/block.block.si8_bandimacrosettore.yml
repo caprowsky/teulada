@@ -1,0 +1,28 @@
+uuid: ca4bcb79-8f72-4826-894e-49dab6aa4b21
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.bandi_macrosettore
+  module:
+    - facets
+    - system
+  theme:
+    - si8
+id: si8_bandimacrosettore
+theme: si8
+region: sidebar_second
+weight: -18
+provider: null
+plugin: 'facet_block:bandi_macrosettore'
+settings:
+  id: 'facet_block:bandi_macrosettore'
+  label: Macrosettore
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /agevolazioni
+    negate: false
+    context_mapping: {  }

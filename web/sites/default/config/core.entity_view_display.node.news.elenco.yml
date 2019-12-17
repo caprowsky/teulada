@@ -1,0 +1,75 @@
+uuid: c9b51e42-0805-4bb5-840e-386cd2ae9e18
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.elenco
+    - field.field.node.news.body
+    - field.field.node.news.field_allegati
+    - field.field.node.news.field_argomenti
+    - field.field.node.news.field_evento_data
+    - field.field.node.news.field_immagine
+    - field.field.node.news.field_metatag
+    - field.field.node.news.field_risorse_collegate
+    - field.field.node.news.field_tags
+    - node.type.news
+    - responsive_image.styles.elenco_contenuti
+  module:
+    - datetime_range
+    - responsive_image
+    - smart_trim
+    - user
+id: node.news.elenco
+targetEntityType: node
+bundle: news
+mode: elenco
+content:
+  body:
+    type: smart_trim
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: '50'
+      trim_type: words
+      trim_suffix: ' [...]'
+      more_link: '0'
+      more_text: More
+      summary_handler: trim
+      trim_options:
+        text: text
+      more_class: more-link
+    third_party_settings: {  }
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_evento_data:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: data_completa
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_immagine:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: elenco_contenuti
+      image_link: content
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  addtoany: true
+  field_allegati: true
+  field_argomenti: true
+  field_metatag: true
+  field_risorse_collegate: true
+  field_tags: true
+  langcode: true
+  links: true

@@ -1,0 +1,17 @@
+uuid: 78ef09dc-ff96-4306-b367-b04b4835b422
+langcode: it
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Bando
+type: bando
+description: 'Compila questo form se vuoi aggiungere un bando.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

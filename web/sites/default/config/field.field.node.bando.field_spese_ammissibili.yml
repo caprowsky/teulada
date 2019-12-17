@@ -1,0 +1,21 @@
+uuid: 34b43644-5c49-4a06-bba7-764a600aa254
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spese_ammissibili
+    - node.type.bando
+  module:
+    - text
+id: node.bando.field_spese_ammissibili
+field_name: field_spese_ammissibili
+entity_type: node
+bundle: bando
+label: 'Spese ammissibili'
+description: 'Inserisci la descrizione delle spese ammissibili'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

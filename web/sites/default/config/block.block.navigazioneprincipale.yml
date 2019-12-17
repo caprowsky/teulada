@@ -1,0 +1,35 @@
+uuid: 555a01c6-1d9a-4605-90db-be6d9361b93e
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+    - node
+  theme:
+    - si8
+id: navigazioneprincipale
+theme: si8
+region: footer
+weight: -8
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Menu Block Pagine'
+  provider: menu_block
+  label_display: '0'
+  level: 2
+  depth: 0
+  expand: 0
+  parent: 'main:'
+  suggestion: main_block_page
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

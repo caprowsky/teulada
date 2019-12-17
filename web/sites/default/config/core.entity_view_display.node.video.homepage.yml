@@ -1,0 +1,31 @@
+uuid: 28ec6eab-93fd-448a-a016-df949ed32c41
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.homepage
+    - field.field.node.video.body
+    - field.field.node.video.field_youtube_video
+    - node.type.video
+  module:
+    - user
+    - youtube
+id: node.video.homepage
+targetEntityType: node
+bundle: video
+mode: homepage
+content:
+  field_youtube_video:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: news_home
+      image_link: content
+    third_party_settings: {  }
+    type: youtube_thumbnail
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  langcode: true
+  links: true

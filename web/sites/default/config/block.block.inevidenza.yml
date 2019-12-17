@@ -1,0 +1,27 @@
+uuid: 24f931ef-19e3-474e-97d3-f9f9f452e7b4
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.in-evidenza
+  module:
+    - menu_block
+  theme:
+    - si8
+id: inevidenza
+theme: si8
+region: footer
+weight: -10
+provider: null
+plugin: 'menu_block:in-evidenza'
+settings:
+  id: 'menu_block:in-evidenza'
+  label: 'In evidenza'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'in-evidenza:'
+  suggestion: in_evidenza
+visibility: {  }

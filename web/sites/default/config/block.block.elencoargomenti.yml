@@ -1,0 +1,26 @@
+uuid: 225fc7eb-ea1f-4ebc-989a-e839e51a6c75
+langcode: it
+status: true
+dependencies:
+  module:
+    - si8_utils
+    - system
+  theme:
+    - si8
+id: elencoargomenti
+theme: si8
+region: sidebar_second
+weight: -12
+provider: null
+plugin: elenco_argomenti
+settings:
+  id: elenco_argomenti
+  label: 'Elenco Argomenti'
+  provider: si8_utils
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/news\r\n/news/*\r\n"
+    negate: false
+    context_mapping: {  }

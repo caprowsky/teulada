@@ -1,0 +1,166 @@
+id: eventi_t1
+label: si8 eventi_t1 migration
+migration_group: si8
+
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:  modules/custom/migrando/files/si8_evento_tnid_no_0.json
+  item_selector: items
+  translations: true
+  fields:
+    -
+      name: tnid
+      selector: tnid
+    -
+      name: nid
+      selector: nid
+    -
+      name: title
+      selector: title
+    -
+      name: uuid
+      selector: uuid
+    -
+      name: uid
+      selector: uid
+    -
+      name: created
+      selector: created
+    -
+      name: changed
+      selector: changed
+    -
+      name: status
+      selector: pubblicato
+    -
+      name: language
+      selector: lingua
+    -
+      name: risorse_collegate
+      selector: risorse_collegate
+    -
+      name: documenti_allegati
+      selector: documenti_allegati
+    -
+      name: immagini
+      selector: immagine_principale
+    -
+      name: tags
+      selector: tags
+    -
+      name: body
+      selector: body
+    -
+      name: percorso
+      selector: percorso
+    -
+      name: data_evento
+      selector: data_evento
+    -
+
+  ids:
+    nid:
+      type: string
+
+process:
+  created: created
+  status: status
+
+  uid:
+    plugin: migration
+    migration: si8_utenti
+    no_stub: true
+    source: uid
+
+  langcode:
+    plugin: static_map
+    source: language
+    map:
+      ES: es
+      EN: en
+      IT: it
+      und: it
+    default_value: it
+
+  type:
+    plugin: default_value
+    default_value: news
+
+  nid:
+    plugin: migration
+    migration: eventi_t0
+    no_stub: true
+    source: tnid
+
+  title:
+    plugin: encode
+    source: title
+
+  'body/value': body/value
+  'body/format':
+    plugin: default_value
+    default_value: basic_html
+
+  field_risorse_collegate:
+    plugin: iterator
+    source: risorse_collegate
+    process:
+      target_id:
+        plugin: migration
+        migration:
+          - eventi_t0
+          - eventi_t1
+          - faq_t0
+          - glossario_t0
+          - notizie_t0
+          - notizie_t1
+          - pagine_t0
+          - pagine_t1
+        no_stub: true
+        source: nid
+
+  field_allegati:
+    plugin: iterator
+    source: documenti_allegati
+    process:
+      target_id:
+        plugin: migration
+        migration: files
+        no_stub: true
+        source: fid
+
+  field_immagine:
+    target_id:
+      plugin: migration
+      migration: immagini
+      no_stub: true
+      source: immagini/fid
+
+  field_tags:
+    plugin: iterator
+    source: tags
+    process:
+      target_id:
+        plugin: migration
+        migration: termini
+        no_stub: true
+        source: tid
+
+  field_data_evento:
+    value:
+      plugin: substr
+      source: data_evento
+      start: 0
+      length: 10
+
+destination:
+  plugin: entity:node
+  translations: true
+
+dependencies:
+  enforced:
+    module:
+      - migrando
+

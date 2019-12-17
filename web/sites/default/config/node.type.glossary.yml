@@ -1,0 +1,17 @@
+uuid: 8f232acc-df06-4527-ba16-37ded270bf12
+langcode: it
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Glossario
+type: glossary
+description: 'Crea una nuova voce del glossario.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

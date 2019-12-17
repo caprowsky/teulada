@@ -1,0 +1,21 @@
+uuid: 46fc83b1-94dc-4633-851c-9bc959cfc0fd
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.messaggio
+  module:
+    - text
+id: paragraph.messaggio.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: messaggio
+label: Messaggio
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

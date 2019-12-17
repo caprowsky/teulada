@@ -1,0 +1,31 @@
+uuid: bf5463d1-d2d6-43a0-b3ea-5fa5552a5a8b
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.elenco
+    - field.field.node.video.body
+    - field.field.node.video.field_youtube_video
+    - node.type.video
+  module:
+    - user
+    - youtube
+id: node.video.elenco
+targetEntityType: node
+bundle: video
+mode: elenco
+content:
+  field_youtube_video:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: video
+      image_link: content
+    third_party_settings: {  }
+    type: youtube_thumbnail
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  langcode: true
+  links: true

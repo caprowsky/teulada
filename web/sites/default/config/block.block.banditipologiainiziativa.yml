@@ -1,0 +1,28 @@
+uuid: 55ecbcc5-67bb-4802-b280-2d304a82f4ab
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.bandi_tipologia_iniziativa
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: banditipologiainiziativa
+theme: bartik
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'facet_block:bandi_tipologia_iniziativa'
+settings:
+  id: 'facet_block:bandi_tipologia_iniziativa'
+  label: 'Bandi - Tipologia iniziativa'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /bandi
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: e2dd2551-e95c-40f1-993d-27ab8e6128f4
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: glossario
+label: Glossario
+type: 'canonical_entities:node'
+pattern: '/glossario/[node:title]'
+selection_criteria:
+  50840ece-49cb-4115-932c-e6252948911a:
+    id: node_type
+    bundles:
+      glossary: glossary
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 50840ece-49cb-4115-932c-e6252948911a
+selection_logic: and
+weight: -5
+relationships: {  }

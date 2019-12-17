@@ -1,0 +1,23 @@
+uuid: 7f05612e-2cb1-4c2a-acf1-ad830001b06f
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.messaggio.field_body
+    - paragraphs.paragraphs_type.messaggio
+  module:
+    - text
+id: paragraph.messaggio.preview
+targetEntityType: paragraph
+bundle: messaggio
+mode: preview
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

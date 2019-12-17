@@ -1,0 +1,32 @@
+domain: ''
+domains_option: 0
+domains_list: 'http://localhost'
+eu_only: false
+exclude_paths: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
+export:
+  folder: personalizzato
+langcode: it
+popup_agreed:
+  value: '<h2>Grazie per aver accettato i cookie.</h2><p>Se vuoi puoi chiudere questo messaggio oppure puoi approfondire l''argomento sulla nostra informativa.</p>'
+  format: restricted_html
+popup_agree_button_message: 'Si, accetto'
+popup_agreed_enabled: true
+popup_bg_hex: 0779BF
+popup_clicking_confirmation: true
+popup_delay: 1
+popup_disagree_button_message: 'No, dammi maggiori informazioni'
+popup_enabled: true
+popup_find_more_button_message: 'Maggiori informazioni'
+popup_height: null
+popup_hide_agreed: true
+popup_hide_button_message: Hide
+popup_info:
+  value: '<h2>Questo sito utilizza i cookie per migliorare la tua esperienza.</h2><p>Cliccando su qualsiasi link in questa pagina, dai il tuo consenso al loro utilizzo.</p>'
+  format: restricted_html
+popup_link: 'http://www.regione.sardegna.it/privacy.html'
+popup_link_new_window: true
+popup_position: true
+popup_text_hex: ffffff
+popup_width: 100%
+_core:
+  default_config_hash: kfXrsolOPAF-91bVNi2WkyMavN4TSaqPeL_A466DYwU

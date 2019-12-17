@@ -1,0 +1,62 @@
+id: files
+label: si8 files migration
+migration_group: si8
+
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls: modules/custom/migrando/files/si8_files_no_img.json
+  item_selector: items
+  fields:
+    -
+      name: fid
+      selector: fid
+    -
+      name: created
+      selector: created
+    -
+      name: filename
+      selector: filename
+    -
+      name: uuid
+      selector: uuid
+    -
+      name: percorso
+      selector: percorso
+    -
+      name: url
+      selector: url
+    -
+      name: mimetype
+      selector: mime_type
+
+  ids:
+    fid:
+      type: string
+
+process:
+  uid:
+    plugin: default_value
+    default_value: 1
+  filename: filename
+  uuid: uuid
+  status:
+    plugin: default_value
+    default_value: 1
+  created: created
+  #mimetype: mimetype
+  uri:
+    plugin: file_copy
+    source:
+      - url
+      - percorso
+
+destination:
+  plugin: entity:file
+  bundle: image
+
+dependencies:
+  enforced:
+    module:
+      - migrando

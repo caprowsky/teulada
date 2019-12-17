@@ -1,0 +1,19 @@
+uuid: 66b717e3-599f-4a6a-9520-6a5ee2f68d1d
+langcode: it
+status: true
+dependencies:
+  module:
+    - rest_menu_items
+    - serialization
+    - user
+id: rest_menu_item
+plugin_id: rest_menu_item
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+    - xml
+  authentication:
+    - cookie

@@ -1,0 +1,20 @@
+uuid: 2ef2a40b-4e03-4998-bff6-c4582d39e559
+langcode: it
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - si8
+id: selettorelingua
+theme: si8
+region: footer
+weight: -6
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Selettore lingua'
+  provider: language
+  label_display: '0'
+visibility: {  }

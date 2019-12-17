@@ -1,0 +1,5 @@
+name: Bandi
+description: Utility for bandi
+package: SardegnaImpresa
+type: module
+core: 8.x

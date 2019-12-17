@@ -1,0 +1,19 @@
+uuid: 84eb32ef-db1c-44a2-9059-3d92ad049f45
+langcode: it
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Utente anonimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access mailchimp signup pages'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'restful get rest_menu_item'
+  - 'search content'
+  - 'use text format restricted_html'

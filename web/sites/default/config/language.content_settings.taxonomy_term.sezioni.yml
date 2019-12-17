@@ -1,0 +1,16 @@
+uuid: cd51130e-8b76-48ac-bf0c-6becad4e5947
+langcode: it
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sezioni
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.sezioni
+target_entity_type_id: taxonomy_term
+target_bundle: sezioni
+default_langcode: site_default
+language_alterable: true

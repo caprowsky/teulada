@@ -1,0 +1,19 @@
+uuid: 49b9d4d4-36a4-4c94-8c04-3411ceb020e8
+langcode: it
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_testo
+field_name: field_testo
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

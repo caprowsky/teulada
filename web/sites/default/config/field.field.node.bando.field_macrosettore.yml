@@ -1,0 +1,21 @@
+uuid: 9f78037e-eb72-4701-b45e-14f0a8f4aa5c
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_macrosettore
+    - node.type.bando
+  module:
+    - options
+id: node.bando.field_macrosettore
+field_name: field_macrosettore
+entity_type: node
+bundle: bando
+label: Macrosettore
+description: 'Indica il macrosettore di riferimento'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

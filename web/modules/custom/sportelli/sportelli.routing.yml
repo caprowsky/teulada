@@ -1,0 +1,7 @@
+sportelli.sportelli:
+  path: '/sportello-unico/dove-si-trova'
+  defaults:
+    _controller: Drupal\sportelli\Controller\MainSportelli::main
+    _title: 'Where is it'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,31 @@
+uuid: 29a434fd-ffd9-42e7-bbd4-4ecd215bfba9
+langcode: it
+status: true
+dependencies:
+  config:
+    - views.view.entity_browser_contenuti
+  module:
+    - views
+name: agevolazioni
+label: Agevolazioni
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Seleziona contenuti'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  61471be8-7b78-486d-b338-6cfd507c23ab:
+    settings:
+      view: entity_browser_contenuti
+      view_display: agevolazioni
+      submit_text: 'Inserisci contenuti'
+      auto_select: false
+    uuid: 61471be8-7b78-486d-b338-6cfd507c23ab
+    weight: 1
+    label: view
+    id: view

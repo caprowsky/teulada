@@ -1,0 +1,18 @@
+uuid: 3a6ec787-13bd-4f8e-90c4-824291d2ddda
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_a_sportello
+field_name: field_a_sportello
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

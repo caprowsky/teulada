@@ -1,0 +1,28 @@
+uuid: dc20e28d-6ff0-48ad-8b1a-05bf2e49418b
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.tipologia_procedimento
+  module:
+    - facets
+    - system
+  theme:
+    - si8
+id: tipologiaprocedimento
+theme: si8
+region: footer
+weight: -2
+provider: null
+plugin: 'facet_block:tipologia_procedimento'
+settings:
+  id: 'facet_block:tipologia_procedimento'
+  label: 'Tipologia procedimento'
+  provider: facets
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /sportello-unico/trova-procedimento
+    negate: false
+    context_mapping: {  }

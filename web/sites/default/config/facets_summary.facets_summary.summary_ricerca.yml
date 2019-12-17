@@ -1,0 +1,33 @@
+uuid: dca7043f-9869-40fd-b172-9d24be68280c
+langcode: it
+status: true
+dependencies:
+  config:
+    - search_api.index.bandi
+    - views.view.ricerca
+  module:
+    - search_api
+id: summary_ricerca
+name: 'Summary ricerca'
+facets:
+  facet_ricerca_content_type:
+    checked: true
+    label: 'Facet Ricerca - Content type'
+    separator: ', '
+    weight: 0
+    show_count: false
+  ricerca_argomenti:
+    checked: true
+    label: 'Ricerca - Argomenti'
+    separator: ', '
+    weight: 0
+    show_count: false
+  ricerca_tags:
+    checked: true
+    label: 'Ricerca - Tags'
+    separator: ', '
+    weight: 0
+    show_count: false
+facet_source_id: 'search_api:views_page__ricerca__ricerca'
+processor_configs: {  }
+empty_behavior: null

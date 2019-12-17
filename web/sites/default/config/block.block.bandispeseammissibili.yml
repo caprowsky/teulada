@@ -1,0 +1,28 @@
+uuid: 1d7ced16-0227-4ba6-b009-b3bf8218aa07
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.bandi_spese_ammissibili
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: bandispeseammissibili
+theme: bartik
+region: sidebar_first
+weight: -4
+provider: null
+plugin: 'facet_block:bandi_spese_ammissibili'
+settings:
+  id: 'facet_block:bandi_spese_ammissibili'
+  label: 'Bandi - Spese ammissibili'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /bandi
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,37 @@
+uuid: 3dd8a079-1831-47bf-a981-8dd0ac36f5cc
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.faq.body
+    - field.field.node.faq.field_metatag
+    - field.field.node.faq.field_tags
+    - node.type.faq
+  module:
+    - metatag
+    - text
+    - user
+id: node.faq.default
+targetEntityType: node
+bundle: faq
+mode: default
+content:
+  body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_metatag:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+hidden:
+  addtoany: true
+  field_tags: true
+  langcode: true
+  links: true

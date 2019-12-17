@@ -1,0 +1,23 @@
+uuid: 0d185405-dc72-4e67-9252-8ae0d6dbe760
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_riferimenti
+    - node.type.bando
+  module:
+    - link
+id: node.bando.field_riferimenti
+field_name: field_riferimenti
+entity_type: node
+bundle: bando
+label: Riferimenti
+description: 'Inserisci dei riferimenti esterni in forma di URL'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

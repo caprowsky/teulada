@@ -1,0 +1,27 @@
+uuid: 38901d38-29d2-4f8b-b9a5-dc185024d9fe
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tipologia_iniziativa
+field_name: field_tipologia_iniziativa
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 'Nuova impresa'
+    -
+      value: 1
+      label: 'Impresa operante'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

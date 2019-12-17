@@ -1,0 +1,19 @@
+uuid: a00e537a-3bf0-4ca1-a4d5-f7b11ca98b7f
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_soggetti_ammissibili
+field_name: field_soggetti_ammissibili
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

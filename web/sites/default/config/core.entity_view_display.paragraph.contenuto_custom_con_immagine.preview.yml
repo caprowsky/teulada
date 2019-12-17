@@ -1,0 +1,26 @@
+uuid: 74ce7321-fbec-40dd-8858-47f2674b7ea2
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.contenuto_custom_con_immagine.field_immagine
+    - field.field.paragraph.contenuto_custom_con_immagine.field_testo
+    - field.field.paragraph.contenuto_custom_con_immagine.field_titolo
+    - paragraphs.paragraphs_type.contenuto_custom_con_immagine
+id: paragraph.contenuto_custom_con_immagine.preview
+targetEntityType: paragraph
+bundle: contenuto_custom_con_immagine
+mode: preview
+content:
+  field_titolo:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_immagine: true
+  field_testo: true

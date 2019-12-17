@@ -1,0 +1,16 @@
+uuid: b3c27269-64f4-4772-956b-094225f3b473
+langcode: it
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.contenuto_custom
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: paragraph.contenuto_custom
+target_entity_type_id: paragraph
+target_bundle: contenuto_custom
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,52 @@
+uuid: d353ce82-24df-4c76-ac21-2e0e384153f1
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.risultato_ricerca
+    - field.field.node.page.body
+    - field.field.node.page.field_allegati
+    - field.field.node.page.field_box
+    - field.field.node.page.field_immagine
+    - field.field.node.page.field_metatag
+    - field.field.node.page.field_risorse_collegate
+    - field.field.node.page.field_sezione
+    - field.field.node.page.field_tags
+    - field.field.node.page.field_tipologia_procedimento
+    - node.type.page
+  module:
+    - smart_trim
+    - user
+id: node.page.risultato_ricerca
+targetEntityType: node
+bundle: page
+mode: risultato_ricerca
+content:
+  body:
+    type: smart_trim
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: '40'
+      trim_type: words
+      trim_suffix: '  [...]'
+      more_link: '0'
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: text
+      more_class: more-link
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_allegati: true
+  field_box: true
+  field_immagine: true
+  field_metatag: true
+  field_risorse_collegate: true
+  field_sezione: true
+  field_tags: true
+  field_tipologia_procedimento: true
+  langcode: true
+  links: true

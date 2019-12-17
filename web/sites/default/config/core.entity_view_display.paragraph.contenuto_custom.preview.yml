@@ -1,0 +1,30 @@
+uuid: 4e833e06-f497-4023-a8f3-b83ac5dbb803
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.contenuto_custom.field_body
+    - field.field.paragraph.contenuto_custom.field_link
+    - paragraphs.paragraphs_type.contenuto_custom
+  module:
+    - link
+id: paragraph.contenuto_custom.preview
+targetEntityType: paragraph
+bundle: contenuto_custom
+mode: preview
+content:
+  field_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+hidden:
+  field_body: true
