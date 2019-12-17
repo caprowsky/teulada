@@ -153,6 +153,9 @@ services:
       PHP_MAX_INPUT_VARS: 1G
     labels:
       - "traefik.http.routers.${PROJECT_NAME}_pma.rule=Host(`pma.${PROJECT_BASE_URL}`)"
+    ports:
+      - "6000:80"
+
 
   solr:
     image: wodby/solr:$SOLR_TAG
@@ -273,17 +276,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     labels:
       - "traefik.http.routers.${PROJECT_NAME}_portainer.rule=Host(`portainer.${PROJECT_BASE_URL}`)"
-
-  traefik:
-    image: traefik:v2.0
-    container_name: "${PROJECT_NAME}_traefik"
-    command: --api.insecure=true --providers.docker
     ports:
-      - '8000:80'
-#      - '8080:8080' # Dashboard
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-
+      - "5000:80"
 #volumes:
 ## Docker-sync for macOS users
 #  docker-sync:
